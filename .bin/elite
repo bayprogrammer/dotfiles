@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#
+# Elite: Dangerous hackery
+#
+# https://github.com/redmcg/wine/wiki#using-winetricks
+# https://urbandork.ca/2019/08/29/elite-dangerous-working-on-linux/
+#
+#   $ wine64 uninstaller  # make sure wine-mono is uninstalled
+#   $ rm -rf $WINEPREFIX
+#   $ winetricks -q dotnet40 win7
+#
+STEAMAPPS="${HOME}/.steam/steam/steamapps"
+export WINEPREFIX="${STEAMAPPS}/compatdata/359320/pfx"
+
+steam steam://rungameid/359320

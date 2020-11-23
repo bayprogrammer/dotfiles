@@ -1,0 +1,14 @@
+PLATO PALETTE
+
+        FOREGR   #ff9000   BACKGR   #180700
+        FGBOLD   #ffc90b   CURSOR   #b33b00
+
+White   COLOR 07 #ffbc60   COLOR 15 #ffeaaa
+Black   COLOR 00 #712000   COLOR 08 #b25824
+
+Red     COLOR 01 #bc1c00   COLOR 09 #ff2e00
+Green   COLOR 02 #a69a52   COLOR 10 #b6d100
+Yellow  COLOR 03 #ddbe33   COLOR 11 #eee11d
+Blue    COLOR 04 #519ab7   COLOR 12 #6bc5e7
+Magenta COLOR 05 #c555b3   COLOR 13 #f365dc
+Cyan    COLOR 06 #72b9a5   COLOR 14 #6adcbb

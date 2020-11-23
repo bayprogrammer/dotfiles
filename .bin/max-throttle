@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+cd /sys/devices/system/cpu
+newSpeedTop=$(cat cpu0/cpufreq/cpuinfo_min_freq)
+for c in ./cpu[0-9]*; do
+  echo $newSpeedTop >${c}/cpufreq/scaling_max_freq
+  echo $newSpeedTop >${c}/cpufreq/scaling_min_freq
+done
+
+powertop --auto-tune

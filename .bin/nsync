@@ -1,0 +1,70 @@
+#!/bin/sh
+
+# This is the little rsync wrapper I use; it uses hardcoded variables
+# defining "sets" (or groups) of directories to be rsynced around
+# between hosts. It's a dangerous way to live, but if you're careful
+# (and maybe backup your files regularly) it is quick and gets the job
+# done.
+
+# If others were to use this I would want to make the sets something
+# which are read in from ~/.nsync; until then, it's hard-coded to fit
+# my own hierarchy
+
+# Predefined sets that can be specified
+all="ark"
+#pi="ark"
+
+# Will be set for specific sets below
+extraargs=
+
+# Unless -f flag passed, we always do a rsync DRY RUN
+forreal='-n'
+
+# Set and desthost must be set by args to this script
+set=
+desthost=
+
+usage() {
+  echo "USAGE: nsync [-f] [-c] <set> <hostname>"
+  echo " SETS: pi all"
+}
+
+# Process arguments and flags
+while [ $# -gt 0 ]; do
+  case $1 in
+    'help'|'-h'|'--help')
+      usage
+      exit 0
+      ;;
+    '-f')
+      forreal=''
+      ;;
+    '-c')
+      extraargs="$extraargs -c"
+      ;;
+    'all')
+      set=$all
+      ;;
+    #'pi')
+    #  set=$pi
+    #  extraargs="$extraargs --exclude work/0_ATTIC --exclude code/0_ATTIC --exclude archive/audio --exclude archive/video"
+    #  ;;
+    *)
+      desthost=$1
+      ;;
+  esac
+  shift
+done
+
+# Only run the sync if both a desthost and set have been specified
+if [ "$desthost" ] && [ "$set" ]; then
+  rsync $forreal -avz --delete $extraargs \
+        --exclude '*~' \
+        --exclude '*.elc' \
+        --exclude '*.swp' \
+        $set $desthost:~
+else
+  echo "No set and/or destination host specified." >&2
+  usage >&2
+  exit 1
+fi

@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+
+require_relative './lib/ansi'
+
+module BasicColors
+
+  def self.display_combination(color, include_reverse=false, include_blink=false)
+    print ANSI::Simple.color(color, color.to_s.rjust(16))
+    print ANSI::Simple.color(color, "  " + ANSI::Simple.bold("bold"))
+    print ANSI::Simple.color(color, "  " + ANSI::Simple.italic("italic"))
+    print ANSI::Simple.color(color, "  " + ANSI::Simple.underline("underline"))
+
+    if include_reverse
+      print ANSI::Simple.color(color, "  " + ANSI::Simple.reverse("reverse"))
+    end
+
+    if include_blink
+      print ANSI::Simple.color(color, "  " + ANSI::Simple.blink("blink"))
+    end
+
+    print ANSI::Simple.reset
+    print "\n"
+  end
+
+  def self.display_combinations(include_reverse=false, include_blink=false)
+    display_combination(:default, include_reverse, include_blink)
+
+    display_combination(:black, include_reverse, include_blink)
+    display_combination(:red, include_reverse, include_blink)
+    display_combination(:green, include_reverse, include_blink)
+    display_combination(:yellow, include_reverse, include_blink)
+    display_combination(:blue, include_reverse, include_blink)
+    display_combination(:magenta, include_reverse, include_blink)
+    display_combination(:cyan, include_reverse, include_blink)
+    display_combination(:white, include_reverse, include_blink)
+
+    display_combination(:bright_black, include_reverse, include_blink)
+    display_combination(:bright_red, include_reverse, include_blink)
+    display_combination(:bright_green, include_reverse, include_blink)
+    display_combination(:bright_yellow, include_reverse, include_blink)
+    display_combination(:bright_blue, include_reverse, include_blink)
+    display_combination(:bright_magenta, include_reverse, include_blink)
+    display_combination(:bright_cyan, include_reverse, include_blink)
+    display_combination(:bright_white, include_reverse, include_blink)
+  end
+end
+
+BasicColors.display_combinations(ARGV.include?('-r'), ARGV.include?('-b'))

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nohup flatpak --user run com.mojang.Minecraft -- "$@" >/dev/null >&1 &

@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+hex = ARGV[0]
+hex = hex.sub('#', '').to_i(16)
+puts [
+  (hex >> 16),
+  (hex & 0x00FF00) >> 8,
+  hex & 0x0000FF
+].join(' ')

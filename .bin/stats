@@ -1,0 +1,38 @@
+#!/bin/bash
+
+mem=( $(cat /proc/meminfo | grep '\(MemTotal\|MemAvailable\)' | awk '{ print $2 }') )
+mem_total=$( echo "scale=1; ${mem[0]} / 1024" | bc )
+mem_used=$(( ${mem[0]} - ${mem[1]} ))
+mem_used=$(echo "scale=1; $mem_used / 1024" | bc )
+#clock=$(date +'%d-%b-%Y %H:%M:%S %Z')
+load=$(cat /proc/loadavg | cut -d' ' -f1)
+volume=$(pulsemixer --get-volume | cut -d' ' -f1)
+
+brightness=$(xbacklight 2>/dev/null | cut -d'.' -f1)
+acpi="$(acpi 2>/dev/null)"
+bat_percent="$(echo $acpi | cut -d',' -f2 | sed 's/ //')"
+bat_time="$(echo $acpi | cut -d',' -f3 | cut -d' ' -f2)"
+if [ "$bat_time" ]; then
+  battery="${bat_percent} (${bat_time})"
+else
+  battery="${bat_percent}"
+fi
+
+printf '%*s' 8 'load: '
+echo "${load}"
+
+printf '%*s' 8 'ram: '
+echo "${mem_used}/${mem_total}m"
+
+printf '%*s' 8 'vol: '
+echo "${volume}%"
+
+if [ "$brightness" ]; then
+  printf '%*s' 8 'bright: '
+  echo "${brightness}%"
+fi
+
+if [ "$battery" ]; then
+  printf '%*s' 8 'bat: '
+  echo "${battery}"
+fi

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nohup flatpak --user run com.spotify.Client -- "$@" >/dev/null >&1 &

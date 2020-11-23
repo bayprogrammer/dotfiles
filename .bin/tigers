@@ -1,0 +1,6 @@
+#!/bin/bash
+
+disp=:1
+[ "$1" ] && disp=":$1"
+
+tigervncserver -localhost -xstartup /etc/X11/Xsession -autokill -SecurityTypes None $disp

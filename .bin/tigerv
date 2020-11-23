@@ -1,0 +1,6 @@
+#!/bin/bash
+
+disp=:1
+[ "$1" ] && disp=":$1"
+
+xtigervncviewer -SecurityTypes None -FullScreen=1 -AcceptClipboard=0 -SetPrimary=0 -SendClipboard=0 -SendPrimary=0 -MenuKey=Insert -FullscreenSystemKeys=1 -Shared localhost$disp

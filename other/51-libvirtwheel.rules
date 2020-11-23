@@ -1,0 +1,7 @@
+// /etc/polkit-1/rules.d/51-libvirtwheel.rules
+polkit.addRule(function(action, subject){
+    if (action.id == "org.libvirt.unix.manage" &&
+        subject.isInGroup("wheel")) {
+            return polkit.Result.YES;
+    }
+});

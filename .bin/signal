@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nohup flatpak --user run org.signal.Signal -- "$@" >/dev/null >&1 &

@@ -1,0 +1,12 @@
+[user]
+	name = Zeb DeOs
+	email = zebdeos@bayprogrammer.com
+[push]
+	default = simple
+[alias]
+	lol = log --graph --oneline --decorate --all
+	d = diff
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore_global

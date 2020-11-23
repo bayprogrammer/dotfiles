@@ -1,0 +1,5 @@
+if [[ $1 ]]; then
+  git log --graph --oneline --decorate --all -$1
+else
+  git log --graph --oneline --decorate --all -10
+fi

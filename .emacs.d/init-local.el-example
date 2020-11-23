@@ -1,0 +1,9 @@
+;;(set-face-attribute 'default nil
+;;                    :font "Terminus"
+;;                    :height 220)
+
+;;(set-face-attribute 'default nil
+;;                    :font "-xos4-terminus-bold-*-*-*-32-*-*-*-*-*-iso10646-*")
+
+;;(if (display-graphic-p (window-frame))
+;;  (setq-default cursor-type '(bar . 4)))

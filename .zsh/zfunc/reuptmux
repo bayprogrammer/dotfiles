@@ -1,0 +1,1 @@
+env | grep TMUX >/dev/null 2>&1 && eval $(tmux showenv -s)

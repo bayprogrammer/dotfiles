@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nohup flatpak --user run com.discordapp.Discord -- "$@" >/dev/null >&1 &

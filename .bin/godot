@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nohup flatpak --user run org.godotengine.Godot -- "$@" >/dev/null >&1 &

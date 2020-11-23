@@ -1,0 +1,7 @@
+TAGS
+tags
+*~
+.byebug_history
+*.log
+.DS_Store
+.idea

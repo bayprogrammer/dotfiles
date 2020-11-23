@@ -1,0 +1,71 @@
+* bayprogrammer's emacs.d
+
+My old =.emacs.d= was imploding under its own weight. I'm starting
+over here.
+
+** Why Emacs? Why not Vim?
+
+I do use Vim, but I'd rather use Emacs*. I do write JavaScript, Python,
+and other things; but I'd rather write Lisp* (and Lisp-aligned
+languages such as Ruby and Elixir). Therefore I prefer Emacs Lisp to
+VimScript and Lua*. Therefore I prefer Emacs to Vim*.
+
+Also Emacs has far nicer and more ergonomic keybindings than
+Vim. :troll:
+
+​*except when I don't
+
+** Reference
+
+*** Emacs Proper
+
+- [[https://www.gnu.org/software/emacs/manual/index.html][Emacs Documentation]]
+  - [[https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][Emacs Manual]]
+  - [[https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html][Emacs Lisp Intro]]
+  - [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][Emacs Lisp Manual]]
+  - [[https://www.gnu.org/software/emacs/manual/html_mono/eieio.html][Emacs Object System (EIEIO)]]
+  - [[https://www.gnu.org/software/emacs/manual/html_node/cl/index.html][Emacs Common Lisp Emulation]]
+
+*** Org Mode
+
+- [[https://orgmode.org/manual/][Org Manual]]
+- [[https://orgmode.org/worg/org-tutorials/index.html][Org Tutorial]]
+
+*** Emacs Configs
+
+- https://github.com/a-schaefers/dotfiles
+  - https://github.com/a-schaefers/nix-config.old/tree/master/external/.emacs.d
+- https://github.com/purcell/emacs.d
+- https://github.com/overtone/emacs-live
+- https://github.com/jimweirich/emacs-setup
+- https://github.com/bbatsov/prelude
+- https://github.com/jwiegley/dot-emacs
+- https://github.com/technomancy/dotfiles/tree/master/.emacs.d
+- https://github.com/rexim/dotfiles
+- https://github.com/hlissner/doom-emacs
+- https://github.com/syl20bnr/spacemacs
+
+*** Emacs Scripts
+
+- https://www.emacswiki.org/emacs/EmacsScripts
+- https://swsnr.de/emacs/2014/08/12/emacs-script-pitfalls.html
+- http://kitchingroup.cheme.cmu.edu/blog/2014/08/06/Writing-scripts-in-Emacs-lisp/
+
+#+BEGIN_SRC
+#!/bin/sh
+":"; exec emacs --quick --script "$0" -f "main" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
+
+(require 'cl-lib)
+
+(defun greet ()
+  (princ "Hello, world.\n"))
+
+(defun main ()
+  (greet))
+#+END_SRC
+
+** Install
+
+#+BEGIN_SRC
+$ ln -s $(pwd) ${HOME}/.emacs.d
+#+END_SRC

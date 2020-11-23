@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" ]; then
+  remote_host="$1"
+else
+  echo "tigert <remote hostname> 1" >&2
+  exit 1
+fi
+
+disp=1
+[ "$2" ] && disp="$2"
+
+ssh -t -L 590$disp:localhost:590$disp "$remote_host"

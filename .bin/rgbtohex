@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+r, g, b = ARGV
+puts ("#%x%x%x" % [r, g, b]).upcase

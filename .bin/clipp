@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ -x /usr/bin/pbpaste ] && [ -x /usr/local/bin/reattach-to-user-namespace ]; then
+  /usr/local/bin/reattach-to-user-namespace /usr/bin/pbpaste
+elif which xsel >/dev/null 2>/dev/null; then
+  xsel -ob </dev/null
+else
+  umask 0077
+  mkdir -p $HOME/.clipboard/
+  if [ -f $HOME/.clipboard/clipdata ]; then
+    cat $HOME/.clipboard/clipdata
+  fi
+fi

@@ -1,0 +1,5 @@
+(defun zmd/lisp-tweaks ()
+  ;;(paredit-mode 1)
+  (zmd/lisp-keys-minor-mode 1)
+  (setq-local electric-indent-mode 1)
+  (setq-local indent-tabs-mode nil))
