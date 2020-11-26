@@ -300,11 +300,16 @@
                               :hashref  "8b22b52b838a26df915c0aedd5804ec9fc0fccff"
                               :date     "Thu Nov 26 11:57:16 AM PST 2020")
 
+            ;; $ mkdir -p ./with-editor/
+            ;; $ rm -rf ./with-editor/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/with-editor
+            ;; $ cp -rp ~/src/emacs-packages/with-editor/{*,.*~*.git} ./with-editor/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "with-editor"
                               :ref      "master"
                               :upstream "https://github.com/magit/with-editor.git"
                               :hashref  "6735180e73e787b79535c245b162249b70dbf841"
-                              :date     "")
+                              :date     "Thu Nov 26 12:41:42 PM PST 2020")
 
             (zmd/package-info :name     "projectile"
                               :ref      "v2.2.0"
