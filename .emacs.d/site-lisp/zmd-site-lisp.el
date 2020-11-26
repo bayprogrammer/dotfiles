@@ -197,11 +197,16 @@
                          :hashref  "424e3734a1ee526a1bd7b5c3cd1d3ef19d184267"
                          :date     "Thu Nov 26 03:50:06 PM PST 2020")
 
+       ;; $ mkdir -p ./memoize/
+       ;; $ rm -rf ./memoize/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/memoize
+       ;; $ cp -rp ~/src/emacs-packages/memoize/* ./memoize/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "memoize"
                          :ref      "master"
                          :upstream "https://github.com/skeeto/emacs-memoize.git"
                          :hashref  "51b075935ca7070f62fae1d69fe0ff7d8fa56fdd"
-                         :date     "")
+                         :date     "Thu Nov 26 03:56:59 PM PST 2020")
 
        (zmd/package-info :name     "autothemer"
                          :ref      "master"
