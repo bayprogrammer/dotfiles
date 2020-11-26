@@ -188,11 +188,16 @@
                               :hashref  "3e00f0e2e6202dd61216e2cb967c1da6a62e9a8d"
                               :date     "")
 
+            ;; $ mkdir -p ./async/
+            ;; $ rm -rf ./async/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/async
+            ;; $ cp -rp ~/src/emacs-packages/async/{*,.*~*.git} ./async/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "async"
                               :ref      "v1.9.4"
                               :upstream "https://github.com/jwiegley/emacs-async.git"
                               :hashref  "67c369555de998eaabd60056dead038c6c50b8fd"
-                              :date     "")
+                              :date     "Thu Nov 26 09:35:09 AM PST 2020")
 
             ;; $ mkdir -p ./dash/
             ;; $ rm -rf ./dash/*
