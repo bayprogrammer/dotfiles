@@ -228,11 +228,16 @@
                               :hashref  "43ba8b563bee3426cead0e6d4ddc09398e1a349d"
                               :date     "Thu Nov 26 08:31:27 AM PST 2020")
 
+            ;; $ mkdir -p ./a/
+            ;; $ rm -rf ./a/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/a
+            ;; $ cp -rp ~/src/emacs-packages/a/{*,.*~*.git} ./a/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "a"
                               :ref      "master"
                               :upstream "https://github.com/plexus/a.el.git"
                               :hashref  "d0490619d374fbda20eb5fb6a91dd87b053d01c0"
-                              :date     "")
+                              :date     "Thu Nov 26 09:06:49 AM PST 2020")
 
             (zmd/package-info :name     "parseclj"
                               :ref      "master"
