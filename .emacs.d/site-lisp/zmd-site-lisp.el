@@ -255,11 +255,16 @@
                               :hashref  "eff941126859bc9e949eae5cd6c2592e731629f2"
                               :date     "Thu Nov 26 10:57:03 AM PST 2020")
 
+            ;; $ mkdir -p ./parseedn/
+            ;; $ rm -rf ./parseedn/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/parseedn
+            ;; $ cp -rp ~/src/emacs-packages/parseedn/{*,.*~*.git} ./parseedn/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "parseedn"
                               :ref      "master"
                               :upstream "https://github.com/clojure-emacs/parseedn.git"
                               :hashref  "90cfe3df51b96f85e346f336c0a0ee6bf7fee508"
-                              :date     "")
+                              :date     "Thu Nov 26 11:02:55 AM PST 2020")
 
             (zmd/package-info :name     "spinner"
                               :ref      "master"
