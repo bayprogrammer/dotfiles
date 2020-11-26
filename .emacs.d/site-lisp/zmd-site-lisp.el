@@ -186,11 +186,16 @@
                          :hashref  "6735180e73e787b79535c245b162249b70dbf841"
                          :date     "Thu Nov 26 12:41:42 PM PST 2020")
 
+       ;; $ mkdir -p ./macrostep/
+       ;; $ rm -rf ./macrostep/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/macrostep
+       ;; $ cp -rp ~/src/emacs-packages/macrostep/{*,.*~*.git} ./macrostep/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "macrostep"
                          :ref      "master"
                          :upstream "https://github.com/joddie/macrostep.git"
                          :hashref  "424e3734a1ee526a1bd7b5c3cd1d3ef19d184267"
-                         :date     "")
+                         :date     "Thu Nov 26 03:50:06 PM PST 2020")
 
        (zmd/package-info :name     "memoize"
                          :ref      "master"
