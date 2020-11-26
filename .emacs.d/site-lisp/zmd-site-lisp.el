@@ -288,11 +288,17 @@
                               :hashref  "edee869c209c016e5f0c5cbb8abb9f3ccd2d1e05"
                               :date     "Thu Nov 26 11:27:32 AM PST 2020")
 
+            ;; $ mkdir -p ./transient/
+            ;; $ rm -rf ./transient/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/transient
+            ;; $ cp -rp ~/src/emacs-packages/transient/{*,.*~*.git} ./transient/
+            ;; $ pushd transient ; ln -sf lisp/transient.el ; popd
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "transient"
                               :ref      "master"
                               :upstream "https://github.com/magit/transient.git"
                               :hashref  "8b22b52b838a26df915c0aedd5804ec9fc0fccff"
-                              :date     "")
+                              :date     "Thu Nov 26 11:57:16 AM PST 2020")
 
             (zmd/package-info :name     "with-editor"
                               :ref      "master"

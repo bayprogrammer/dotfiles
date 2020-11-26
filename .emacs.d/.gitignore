@@ -8,4 +8,5 @@ straight/repos/
 straight/build-cache.el
 amx-items
 transient/
+!site-lisp/*
 projectile-bookmarks.eld
