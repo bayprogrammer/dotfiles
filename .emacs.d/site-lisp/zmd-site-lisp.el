@@ -266,11 +266,16 @@
                               :hashref  "90cfe3df51b96f85e346f336c0a0ee6bf7fee508"
                               :date     "Thu Nov 26 11:02:55 AM PST 2020")
 
+            ;; $ mkdir -p ./spinner/
+            ;; $ rm -rf ./spinner/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/spinner
+            ;; $ cp -rp ~/src/emacs-packages/spinner/* ./spinner/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "spinner"
                               :ref      "master"
                               :upstream "https://github.com/Malabarba/spinner.el.git"
                               :hashref  "d15e7a7b6395be69acda9d6464acc81d3e2ad07d"
-                              :date     "")
+                              :date     "Thu Nov 26 11:11:51 AM PST 2020")
 
             (zmd/package-info :name     "sesman"
                               :ref      "master"
