@@ -192,6 +192,18 @@
                          :hashref  "424e3734a1ee526a1bd7b5c3cd1d3ef19d184267"
                          :date     "")
 
+       (zmd/package-info :name     "memoize"
+                         :ref      "master"
+                         :upstream "https://github.com/skeeto/emacs-memoize.git"
+                         :hashref  "51b075935ca7070f62fae1d69fe0ff7d8fa56fdd"
+                         :date     "")
+
+       (zmd/package-info :name     "autothemer"
+                         :ref      "master"
+                         :upstream "https://github.com/jasonm23/autothemer.git"
+                         :hashref  "69488c71dfc182cf2e7be2d745037f230ade678e"
+                         :date     "")
+
        (zmd/package-info :name     "erlang"
                          :ref      "OTP-23.1.4"
                          :upstream "https://github.com/erlang/otp.git"
@@ -280,6 +292,12 @@
                          :ref      "v2.4"
                          :upstream "https://github.com/jrblevin/markdown-mode.git"
                          :hashref  "7b854c8e70b6d6edee12aec4194f4eb239586804"
+                         :date     "")
+
+       (zmd/package-info :name     "all-the-icons"
+                         :ref      "4.0.1"
+                         :upstream "https://github.com/domtronn/all-the-icons.el.git"
+                         :hashref  "d363bb3e73909be013fcf35e1458bb654ec5bbaa"
                          :date     "")
 
        (zmd/package-info :name     "doom-themes"
