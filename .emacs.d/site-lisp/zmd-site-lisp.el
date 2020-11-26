@@ -205,11 +205,17 @@
                               :hashref  "721436b04da4e2795387cb48a98ac6de37ece0fd"
                               :date     "Thu Nov 26 08:18:39 AM PST 2020")
 
+            ;; $ mkdir -p ./queue/
+            ;; $ rm -rf ./queue/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/queue
+            ;; $ cp -rp ~/src/emacs-packages/queue/{COPYING,README} ./queue/
+            ;; $ cp -rp ~/src/emacs-packages/queue/packages/queue/* ./queue/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "queue"
                               :ref      "master"
                               :upstream "https://git.savannah.gnu.org/git/emacs/elpa.git"
                               :hashref  "7b0fb2b9964a768412e6fc8dd98fface41e1d11a"
-                              :date     "")
+                              :date     "Thu Nov 26 08:40:09 AM PST 2020")
 
             ;; $ mkdir -p ./s/
             ;; $ rm -rf ./s/*
