@@ -59,11 +59,16 @@
                               :hashref  "1114a8d84b60eaf8cadb628a29e0eaf6b5906f69"
                               :date     "")
 
+            ;; $ mkdir -p ./epl/
+            ;; $ rm -rf ./epl/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/epl
+            ;; $ cp -rp ~/src/emacs-packages/epl/{*,.*~*.git} ./epl/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "epl"
                               :ref      "0.9"
                               :upstream "https://github.com/cask/epl.git"
                               :hashref  "fd906d3f92d58ecf24169055744409886ceb06ce"
-                              :date     "")
+                              :date     "Thu Nov 26 07:30:22 AM PST 2020")
 
             (zmd/package-info :name     "gotham-theme"
                               :ref      "master"
@@ -125,11 +130,16 @@
                               :hashref  "f48399440e07199f89e589ac91bc866651264298"
                               :date     "")
 
+            ;; $ mkdir -p ./pkg-info/
+            ;; $ rm -rf ./pkg-info/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/pkg-info
+            ;; $ cp -rp ~/src/emacs-packages/pkg-info/{*,.*~*.git} ./pkg-info/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "pkg-info"
                               :ref      "master"
                               :upstream "https://github.com/emacsorphanage/pkg-info"
                               :hashref  "76ba7415480687d05a4353b27fea2ae02b8d9d61"
-                              :date     "")
+                              :date     "Thu Nov 26 07:30:22 AM PST 2020")
 
             (zmd/package-info :name     "seti-theme"
                               :ref      "master"
@@ -157,7 +167,8 @@
 
             ;; $ mkdir -p ./use-package/
             ;; $ rm -rf ./use-package/*
-            ;; $ cp -rp ~/src/emacs-packages/use-package/{*,.*~.git} ./use-package/
+            ;; $ rm -rf ~/.emacs.d/site-lisp/use-package
+            ;; $ cp -rp ~/src/emacs-packages/use-package/{*,.*~*.git} ./use-package/
             ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "use-package"
                               :ref      "2.4.1"
