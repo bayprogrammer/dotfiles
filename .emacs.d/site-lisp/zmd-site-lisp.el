@@ -277,11 +277,16 @@
                               :hashref  "d15e7a7b6395be69acda9d6464acc81d3e2ad07d"
                               :date     "Thu Nov 26 11:11:51 AM PST 2020")
 
+            ;; $ mkdir -p ./sesman/
+            ;; $ rm -rf ./sesman/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/sesman
+            ;; $ cp -rp ~/src/emacs-packages/sesman/{*,.*~*.git} ./sesman/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "sesman"
                               :ref      "master"
                               :upstream "https://github.com/vspinu/sesman.git"
                               :hashref  "edee869c209c016e5f0c5cbb8abb9f3ccd2d1e05"
-                              :date     "")
+                              :date     "Thu Nov 26 11:27:32 AM PST 2020")
 
             (zmd/package-info :name     "transient"
                               :ref      "master"
