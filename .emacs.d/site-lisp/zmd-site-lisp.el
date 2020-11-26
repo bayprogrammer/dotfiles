@@ -211,11 +211,16 @@
                               :hashref  "7b0fb2b9964a768412e6fc8dd98fface41e1d11a"
                               :date     "")
 
+            ;; $ mkdir -p ./s/
+            ;; $ rm -rf ./s/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/s
+            ;; $ cp -rp ~/src/emacs-packages/s/{*,.*~*.git} ./s/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "s"
                               :ref      "1.12.0"
                               :upstream "https://github.com/magnars/s.el.git"
                               :hashref  "43ba8b563bee3426cead0e6d4ddc09398e1a349d"
-                              :date     "")
+                              :date     "Thu Nov 26 08:31:27 AM PST 2020")
 
             (zmd/package-info :name     "a"
                               :ref      "master"
