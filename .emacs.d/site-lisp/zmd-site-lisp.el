@@ -244,11 +244,16 @@
                               :hashref  "d0490619d374fbda20eb5fb6a91dd87b053d01c0"
                               :date     "Thu Nov 26 09:06:49 AM PST 2020")
 
+            ;; $ mkdir -p ./parseclj/
+            ;; $ rm -rf ./parseclj/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/parseclj
+            ;; $ cp -rp ~/src/emacs-packages/parseclj/{*,.*~*.git} ./parseclj/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "parseclj"
                               :ref      "master"
                               :upstream "https://github.com/clojure-emacs/parseclj.git"
                               :hashref  "eff941126859bc9e949eae5cd6c2592e731629f2"
-                              :date     "")
+                              :date     "Thu Nov 26 10:57:03 AM PST 2020")
 
             (zmd/package-info :name     "parseedn"
                               :ref      "master"
