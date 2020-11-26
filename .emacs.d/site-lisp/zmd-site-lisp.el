@@ -194,11 +194,16 @@
                               :hashref  "67c369555de998eaabd60056dead038c6c50b8fd"
                               :date     "")
 
+            ;; $ mkdir -p ./dash/
+            ;; $ rm -rf ./dash/*
+            ;; $ rm -rf ~/.emacs.d/site-lisp/dash
+            ;; $ cp -rp ~/src/emacs-packages/dash/{*,.*~*.git} ./dash/
+            ;; $ pushd ../../ ; rake install ; popd
             (zmd/package-info :name     "dash"
                               :ref      "2.17.0"
                               :upstream "https://github.com/magnars/dash.el.git"
                               :hashref  "721436b04da4e2795387cb48a98ac6de37ece0fd"
-                              :date     "")
+                              :date     "Thu Nov 26 08:18:39 AM PST 2020")
 
             (zmd/package-info :name     "queue"
                               :ref      "master"
