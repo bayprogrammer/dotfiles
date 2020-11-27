@@ -1,0 +1,8 @@
+*~
+*\#*\#
+*.\#*
+*.elc
+.cask
+elpa*
+/TAGS
+/project

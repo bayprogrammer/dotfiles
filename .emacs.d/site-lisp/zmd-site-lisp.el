@@ -230,6 +230,47 @@
                          :hashref  "d363bb3e73909be013fcf35e1458bb654ec5bbaa"
                          :date     "Fri Nov 27 11:42:02 AM PST 2020")
 
+       ;; $ mkdir -p ./projectile/
+       ;; $ rm -rf ./projectile/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/projectile
+       ;; $ cp -rp ~/src/emacs-packages/projectile/{*,.*~*.git} ./projectile/
+       ;; $ pushd ../../ ; rake install ; popd
+       (zmd/package-info :name     "projectile"
+                         :ref      "v2.2.0"
+                         :upstream "https://github.com/bbatsov/projectile.git"
+                         :hashref  "dc0e7a5ba46f92bd224a5e89f0af2ace0ed05ade"
+                         :date     "Fri Nov 27 12:32:46 PM PST 2020")
+
+       (zmd/package-info :name     "magit"
+                         :ref      "master"
+                         :upstream "https://github.com/magit/magit.git"
+                         :hashref  "6aa23bbce77f87265996eaa51dac4d71faae5ca5"
+                         :date     "")
+
+       (zmd/package-info :name     "web-mode"
+                         :ref      "v17"
+                         :upstream "https://github.com/fxbois/web-mode.git"
+                         :hashref  "d115f8dc3052e5779938d782d9cdaa4533ef20ff"
+                         :date     "")
+
+       (zmd/package-info :name     "coffee-mode"
+                         :ref      "master"
+                         :upstream "https://github.com/defunkt/coffee-mode.git"
+                         :hashref  "35a41c7d8233eac0b267d9593e67fb8b6235e134"
+                         :date     "")
+
+       (zmd/package-info :name     "yaml-mode"
+                         :ref      "0.0.15"
+                         :upstream "https://github.com/yoshiki/yaml-mode.git"
+                         :hashref  "fc5e1c58f94472944c4aa838f00f6adcac6fa992"
+                         :date     "")
+
+       (zmd/package-info :name     "markdown-mode"
+                         :ref      "v2.4"
+                         :upstream "https://github.com/jrblevin/markdown-mode.git"
+                         :hashref  "7b854c8e70b6d6edee12aec4194f4eb239586804"
+                         :date     "")
+
        (zmd/package-info :name     "erlang"
                          :ref      "OTP-23.1.4"
                          :upstream "https://github.com/erlang/otp.git"
@@ -260,24 +301,6 @@
                          :hashref  "b0124578db09b64902c8ca981b02e74bec92ef36"
                          :date     "")
 
-       (zmd/package-info :name     "web-mode"
-                         :ref      "v17"
-                         :upstream "https://github.com/fxbois/web-mode.git"
-                         :hashref  "d115f8dc3052e5779938d782d9cdaa4533ef20ff"
-                         :date     "")
-
-       (zmd/package-info :name     "projectile"
-                         :ref      "v2.2.0"
-                         :upstream "https://github.com/bbatsov/projectile.git"
-                         :hashref  "dc0e7a5ba46f92bd224a5e89f0af2ace0ed05ade"
-                         :date     "")
-
-       (zmd/package-info :name     "magit"
-                         :ref      "master"
-                         :upstream "https://github.com/magit/magit.git"
-                         :hashref  "6aa23bbce77f87265996eaa51dac4d71faae5ca5"
-                         :date     "")
-
        (zmd/package-info :name     "slime"
                          :ref      "v2.26"
                          :upstream "https://github.com/slime/slime.git"
@@ -300,24 +323,6 @@
                          :ref      "master"
                          :upstream "https://github.com/clojure-emacs/cider.git"
                          :hashref  "ef47c1de151c212b8d2ddeb9af6c8b0dfc0e300f"
-                         :date     "")
-
-       (zmd/package-info :name     "coffee-mode"
-                         :ref      "master"
-                         :upstream "https://github.com/defunkt/coffee-mode.git"
-                         :hashref  "35a41c7d8233eac0b267d9593e67fb8b6235e134"
-                         :date     "")
-
-       (zmd/package-info :name     "yaml-mode"
-                         :ref      "0.0.15"
-                         :upstream "https://github.com/yoshiki/yaml-mode.git"
-                         :hashref  "fc5e1c58f94472944c4aa838f00f6adcac6fa992"
-                         :date     "")
-
-       (zmd/package-info :name     "markdown-mode"
-                         :ref      "v2.4"
-                         :upstream "https://github.com/jrblevin/markdown-mode.git"
-                         :hashref  "7b854c8e70b6d6edee12aec4194f4eb239586804"
                          :date     "")
 
        (zmd/package-info :name     "doom-themes"
