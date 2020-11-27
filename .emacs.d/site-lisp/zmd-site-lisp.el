@@ -208,11 +208,16 @@
                          :hashref  "51b075935ca7070f62fae1d69fe0ff7d8fa56fdd"
                          :date     "Thu Nov 26 03:56:59 PM PST 2020")
 
+       ;; $ mkdir -p ./autothemer/
+       ;; $ rm -rf ./autothemer/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/autothemer
+       ;; $ cp -rp ~/src/emacs-packages/autothemer/* ./autothemer/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "autothemer"
                          :ref      "master"
                          :upstream "https://github.com/jasonm23/autothemer.git"
                          :hashref  "69488c71dfc182cf2e7be2d745037f230ade678e"
-                         :date     "")
+                         :date     "Fri Nov 27 11:18:58 AM PST 2020")
 
        (zmd/package-info :name     "erlang"
                          :ref      "OTP-23.1.4"
