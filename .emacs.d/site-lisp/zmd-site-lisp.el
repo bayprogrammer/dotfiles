@@ -219,6 +219,17 @@
                          :hashref  "69488c71dfc182cf2e7be2d745037f230ade678e"
                          :date     "Fri Nov 27 11:18:58 AM PST 2020")
 
+       ;; $ mkdir -p ./all-the-icons/
+       ;; $ rm -rf ./all-the-icons/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/all-the-icons
+       ;; $ cp -rp ~/src/emacs-packages/all-the-icons/{*,.*~*.git} ./all-the-icons/
+       ;; $ pushd ../../ ; rake install ; popd
+       (zmd/package-info :name     "all-the-icons"
+                         :ref      "4.0.1"
+                         :upstream "https://github.com/domtronn/all-the-icons.el.git"
+                         :hashref  "d363bb3e73909be013fcf35e1458bb654ec5bbaa"
+                         :date     "Fri Nov 27 11:42:02 AM PST 2020")
+
        (zmd/package-info :name     "erlang"
                          :ref      "OTP-23.1.4"
                          :upstream "https://github.com/erlang/otp.git"
@@ -307,12 +318,6 @@
                          :ref      "v2.4"
                          :upstream "https://github.com/jrblevin/markdown-mode.git"
                          :hashref  "7b854c8e70b6d6edee12aec4194f4eb239586804"
-                         :date     "")
-
-       (zmd/package-info :name     "all-the-icons"
-                         :ref      "4.0.1"
-                         :upstream "https://github.com/domtronn/all-the-icons.el.git"
-                         :hashref  "d363bb3e73909be013fcf35e1458bb654ec5bbaa"
                          :date     "")
 
        (zmd/package-info :name     "doom-themes"
