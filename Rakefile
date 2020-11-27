@@ -63,10 +63,11 @@ namespace :bootstrap do
         dnf do
           upgrade '-y'
 
-          # TODO(zmd): sbcl, cl-asdf, others?
           install '-y', %w(
             cl-asdf
+            elixir
             emacs
+            erlang
             gauche
             info
             java-11-openjdk
