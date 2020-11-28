@@ -240,11 +240,16 @@
                          :hashref  "35a41c7d8233eac0b267d9593e67fb8b6235e134"
                          :date     "Fri Nov 27 05:39:44 PM PST 2020")
 
+       ;; $ mkdir -p ./yaml-mode/
+       ;; $ rm -rf ./yaml-mode/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/yaml-mode
+       ;; $ cp -rp ~/src/emacs-packages/yaml-mode/{*,.*~*.git} ./yaml-mode/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "yaml-mode"
                          :ref      "0.0.15"
                          :upstream "https://github.com/yoshiki/yaml-mode.git"
                          :hashref  "fc5e1c58f94472944c4aa838f00f6adcac6fa992"
-                         :date     "")
+                         :date     "Fri Nov 27 06:05:04 PM PST 2020")
 
        (zmd/package-info :name     "markdown-mode"
                          :ref      "v2.4"
