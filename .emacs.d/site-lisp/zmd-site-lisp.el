@@ -251,11 +251,16 @@
                          :hashref  "fc5e1c58f94472944c4aa838f00f6adcac6fa992"
                          :date     "Fri Nov 27 06:05:04 PM PST 2020")
 
+       ;; $ mkdir -p ./markdown-mode/
+       ;; $ rm -rf ./markdown-mode/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/markdown-mode
+       ;; $ cp -rp ~/src/emacs-packages/markdown-mode/{*,.*~*.git} ./markdown-mode/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "markdown-mode"
                          :ref      "v2.4"
                          :upstream "https://github.com/jrblevin/markdown-mode.git"
                          :hashref  "7b854c8e70b6d6edee12aec4194f4eb239586804"
-                         :date     "")
+                         :date     "Fri Nov 27 07:01:33 PM PST 2020")
 
        (zmd/package-info :name     "erlang"
                          :ref      "OTP-23.1.4"
