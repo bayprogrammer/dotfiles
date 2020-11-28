@@ -286,11 +286,16 @@
                          :hashref  "d8818317f5dad0eadb51160389591a5081fa062c"
                          :date     "Sat Nov 28 02:04:43 PM PST 2020")
 
+       ;; $ mkdir -p ./elixir-mode/
+       ;; $ rm -rf ./elixir-mode/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/elixir-mode
+       ;; $ cp -rp ~/src/emacs-packages/elixir-mode/{*,.*~*.git} ./elixir-mode/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "elixir-mode"
                          :ref      "v2.3.2"
                          :upstream "https://github.com/elixir-editors/emacs-elixir.git"
                          :hashref  "c548a84e69787bcd04e0821351009c4448c96cac"
-                         :date     "")
+                         :date     "Sat Nov 28 02:22:24 PM PST 2020")
 
        (zmd/package-info :name     "inf-elixir"
                          :ref      "master"
