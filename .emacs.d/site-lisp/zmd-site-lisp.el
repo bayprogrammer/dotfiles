@@ -262,11 +262,17 @@
                          :hashref  "7b854c8e70b6d6edee12aec4194f4eb239586804"
                          :date     "Fri Nov 27 07:01:33 PM PST 2020")
 
+       ;; $ mkdir -p ./erlang/
+       ;; $ rm -rf ./erlang/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/erlang
+       ;; $ cp -p ~/src/emacs-packages/erlang/{LICENSE.txt,OTP_VERSION} ./erlang/
+       ;; $ cp -rp ~/src/emacs-packages/erlang/lib/tools/emacs/* ./erlang/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "erlang"
                          :ref      "OTP-23.1.4"
                          :upstream "https://github.com/erlang/otp.git"
                          :hashref  "f48399440e07199f89e589ac91bc866651264298"
-                         :date     "")
+                         :date     "Sat Nov 28 01:36:59 PM PST 2020")
 
        (zmd/package-info :name     "lfe-mode"
                          :ref      "develop"
