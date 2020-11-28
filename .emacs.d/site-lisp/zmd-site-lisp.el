@@ -163,29 +163,6 @@
                          :hashref  "edee869c209c016e5f0c5cbb8abb9f3ccd2d1e05"
                          :date     "Thu Nov 26 11:27:32 AM PST 2020")
 
-       ;; $ mkdir -p ./transient/
-       ;; $ rm -rf ./transient/*
-       ;; $ rm -rf ~/.emacs.d/site-lisp/transient
-       ;; $ cp -rp ~/src/emacs-packages/transient/{*,.*~*.git} ./transient/
-       ;; $ pushd transient ; ln -sf lisp/transient.el ; popd
-       ;; $ pushd ../../ ; rake install ; popd
-       (zmd/package-info :name     "transient"
-                         :ref      "master"
-                         :upstream "https://github.com/magit/transient.git"
-                         :hashref  "8b22b52b838a26df915c0aedd5804ec9fc0fccff"
-                         :date     "Thu Nov 26 11:57:16 AM PST 2020")
-
-       ;; $ mkdir -p ./with-editor/
-       ;; $ rm -rf ./with-editor/*
-       ;; $ rm -rf ~/.emacs.d/site-lisp/with-editor
-       ;; $ cp -rp ~/src/emacs-packages/with-editor/{*,.*~*.git} ./with-editor/
-       ;; $ pushd ../../ ; rake install ; popd
-       (zmd/package-info :name     "with-editor"
-                         :ref      "master"
-                         :upstream "https://github.com/magit/with-editor.git"
-                         :hashref  "6735180e73e787b79535c245b162249b70dbf841"
-                         :date     "Thu Nov 26 12:41:42 PM PST 2020")
-
        ;; $ mkdir -p ./macrostep/
        ;; $ rm -rf ./macrostep/*
        ;; $ rm -rf ~/.emacs.d/site-lisp/macrostep
@@ -240,12 +217,6 @@
                          :upstream "https://github.com/bbatsov/projectile.git"
                          :hashref  "dc0e7a5ba46f92bd224a5e89f0af2ace0ed05ade"
                          :date     "Fri Nov 27 12:32:46 PM PST 2020")
-
-       (zmd/package-info :name     "magit"
-                         :ref      "master"
-                         :upstream "https://github.com/magit/magit.git"
-                         :hashref  "6aa23bbce77f87265996eaa51dac4d71faae5ca5"
-                         :date     "")
 
        (zmd/package-info :name     "web-mode"
                          :ref      "v17"
