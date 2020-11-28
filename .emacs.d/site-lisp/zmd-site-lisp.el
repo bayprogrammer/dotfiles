@@ -229,11 +229,16 @@
                          :hashref  "d115f8dc3052e5779938d782d9cdaa4533ef20ff"
                          :date     "Fri Nov 27 05:25:07 PM PST 2020")
 
+       ;; $ mkdir -p ./coffee-mode/
+       ;; $ rm -rf ./coffee-mode/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/coffee-mode
+       ;; $ cp -rp ~/src/emacs-packages/coffee-mode/{*,.*~*.git} ./coffee-mode/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "coffee-mode"
                          :ref      "master"
                          :upstream "https://github.com/defunkt/coffee-mode.git"
                          :hashref  "35a41c7d8233eac0b267d9593e67fb8b6235e134"
-                         :date     "")
+                         :date     "Fri Nov 27 05:39:44 PM PST 2020")
 
        (zmd/package-info :name     "yaml-mode"
                          :ref      "0.0.15"
