@@ -297,11 +297,16 @@
                          :hashref  "c548a84e69787bcd04e0821351009c4448c96cac"
                          :date     "Sat Nov 28 02:22:24 PM PST 2020")
 
+       ;; $ mkdir -p ./inf-elixir/
+       ;; $ rm -rf ./inf-elixir/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/inf-elixir
+       ;; $ cp -rp ~/src/emacs-packages/inf-elixir/* ./inf-elixir/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "inf-elixir"
                          :ref      "master"
                          :upstream "https://github.com/rolandtritsch/inf-elixir.git"
                          :hashref  "1d1a3fa374a53d0f6a2d67214d167aac6cb2bb5f"
-                         :date     "")
+                         :date     "Sat Nov 28 02:42:04 PM PST 2020")
 
        (zmd/package-info :name     "inf-ruby"
                          :ref      "master"
