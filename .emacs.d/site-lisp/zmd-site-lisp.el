@@ -308,11 +308,16 @@
                          :hashref  "1d1a3fa374a53d0f6a2d67214d167aac6cb2bb5f"
                          :date     "Sat Nov 28 02:42:04 PM PST 2020")
 
+       ;; $ mkdir -p ./inf-ruby/
+       ;; $ rm -rf ./inf-ruby/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/inf-ruby
+       ;; $ cp -rp ~/src/emacs-packages/inf-ruby/* ./inf-ruby/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "inf-ruby"
                          :ref      "master"
                          :upstream "https://github.com/nonsequitur/inf-ruby.git"
                          :hashref  "b0124578db09b64902c8ca981b02e74bec92ef36"
-                         :date     "")
+                         :date     "Sat Nov 28 02:52:56 PM PST 2020")
 
        (zmd/package-info :name     "slime"
                          :ref      "v2.26"
