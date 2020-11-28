@@ -85,6 +85,8 @@ namespace :bootstrap do
             xsel
             zsh
           )
+
+          groupinstall '-y', 'c-development'
         end
       end
 
