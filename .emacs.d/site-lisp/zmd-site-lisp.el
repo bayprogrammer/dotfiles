@@ -218,11 +218,16 @@
                          :hashref  "dc0e7a5ba46f92bd224a5e89f0af2ace0ed05ade"
                          :date     "Fri Nov 27 12:32:46 PM PST 2020")
 
+       ;; $ mkdir -p ./web-mode/
+       ;; $ rm -rf ./web-mode/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/web-mode
+       ;; $ cp -rp ~/src/emacs-packages/web-mode/{*,.*~*.git} ./web-mode/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "web-mode"
                          :ref      "v17"
                          :upstream "https://github.com/fxbois/web-mode.git"
                          :hashref  "d115f8dc3052e5779938d782d9cdaa4533ef20ff"
-                         :date     "")
+                         :date     "Fri Nov 27 05:25:07 PM PST 2020")
 
        (zmd/package-info :name     "coffee-mode"
                          :ref      "master"
