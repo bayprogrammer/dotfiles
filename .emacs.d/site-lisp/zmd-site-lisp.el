@@ -274,11 +274,17 @@
                          :hashref  "f48399440e07199f89e589ac91bc866651264298"
                          :date     "Sat Nov 28 01:36:59 PM PST 2020")
 
+       ;; $ mkdir -p ./lfe-mode/
+       ;; $ rm -rf ./lfe-mode/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/lfe-mode
+       ;; $ cp -p ~/src/emacs-packages/lfe-mode/{LICENSE,VERSION} ./lfe-mode/
+       ;; $ cp -rp ~/src/emacs-packages/lfe-mode/emacs/* ./lfe-mode/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "lfe-mode"
                          :ref      "develop"
                          :upstream "https://github.com/rvirding/lfe.git"
                          :hashref  "d8818317f5dad0eadb51160389591a5081fa062c"
-                         :date     "")
+                         :date     "Sat Nov 28 02:04:43 PM PST 2020")
 
        (zmd/package-info :name     "elixir-mode"
                          :ref      "v2.3.2"
