@@ -319,11 +319,16 @@
                          :hashref  "b0124578db09b64902c8ca981b02e74bec92ef36"
                          :date     "Sat Nov 28 02:52:56 PM PST 2020")
 
+       ;; $ mkdir -p ./slime/
+       ;; $ rm -rf ./slime/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/slime
+       ;; $ cp -rp ~/src/emacs-packages/slime/{*,.*~*.git} ./slime/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "slime"
                          :ref      "v2.26"
                          :upstream "https://github.com/slime/slime.git"
                          :hashref  "v2.26"
-                         :date     "")
+                         :date     "Sun Nov 29 02:59:21 PM PST 2020")
 
        (zmd/package-info :name     "clojure-mode"
                          :ref      "5.9.1"
