@@ -341,11 +341,16 @@
                          :hashref  "e8d6414043dc063d16598dc951c1ba8168738265"
                          :date     "Sun Nov 29 03:11:12 PM PST 2020")
 
+       ;; $ mkdir -p ./inf-clojure/
+       ;; $ rm -rf ./inf-clojure/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/inf-clojure
+       ;; $ cp -rp ~/src/emacs-packages/inf-clojure/{*,.*~*.git} ./inf-clojure/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "inf-clojure"
                          :ref      "v3.0.0"
                          :upstream "https://github.com/clojure-emacs/inf-clojure.git"
                          :hashref  "2c8e46b584be71fe1a585c9072da86382710dc59"
-                         :date     "")
+                         :date     "Sun Nov 29 03:20:27 PM PST 2020")
 
        (zmd/package-info :name     "cider"
                          :ref      "master"
