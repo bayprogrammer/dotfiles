@@ -330,11 +330,16 @@
                          :hashref  "v2.26"
                          :date     "Sun Nov 29 02:59:21 PM PST 2020")
 
+       ;; $ mkdir -p ./clojure-mode/
+       ;; $ rm -rf ./clojure-mode/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/clojure-mode
+       ;; $ cp -rp ~/src/emacs-packages/clojure-mode/{*,.*~*.git} ./clojure-mode/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "clojure-mode"
                          :ref      "5.9.1"
                          :upstream "https://github.com/clojure-emacs/clojure-mode.git"
                          :hashref  "e8d6414043dc063d16598dc951c1ba8168738265"
-                         :date     "")
+                         :date     "Sun Nov 29 03:11:12 PM PST 2020")
 
        (zmd/package-info :name     "inf-clojure"
                          :ref      "v3.0.0"
