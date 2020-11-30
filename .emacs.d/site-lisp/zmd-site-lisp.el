@@ -374,6 +374,17 @@
                          :hashref  "39e6971e81181b86a57f65cd0ea31376203a9756"
                          :date     "Sun Nov 29 04:48:09 PM PST 2020")
 
+       ;; $ mkdir -p ./kaolin-themes/
+       ;; $ rm -rf ./kaolin-themes/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/kaolin-themes
+       ;; $ cp -rp ~/src/emacs-packages/kaolin-themes/* ./kaolin-themes/
+       ;; $ pushd ../../ ; rake install ; popd
+       (zmd/package-info :name     "kaolin-themes"
+                         :ref      "v1.6.1"
+                         :upstream "https://github.com/ogdenwebb/emacs-kaolin-themes.git"
+                         :hashref  "1114a8d84b60eaf8cadb628a29e0eaf6b5906f69"
+                         :date     "Sun Nov 29 05:06:29 PM PST 2020")
+
        (zmd/package-info :name     "dracula-theme"
                          :ref      "v1.7.0"
                          :upstream "https://github.com/dracula/emacs.git"
@@ -390,12 +401,6 @@
                          :ref      "master"
                          :upstream "https://github.com/rexim/gruber-darker-theme.git"
                          :hashref  "7f95ce96079eb22b9214435ed25c5af98f60b482"
-                         :date     "")
-
-       (zmd/package-info :name     "kaolin-themes"
-                         :ref      "v1.6.1"
-                         :upstream "https://github.com/ogdenwebb/emacs-kaolin-themes.git"
-                         :hashref  "1114a8d84b60eaf8cadb628a29e0eaf6b5906f69"
                          :date     "")
 
        (zmd/package-info :name     "monokai-theme"
