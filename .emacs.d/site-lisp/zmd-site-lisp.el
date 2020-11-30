@@ -451,11 +451,16 @@
                          :hashref  "0f5295f99005a200191ce7b660e56cd0510cf710"
                          :date     "Sun Nov 29 06:18:01 PM PST 2020")
 
+       ;; $ mkdir -p ./seti-theme/
+       ;; $ rm -rf ./seti-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/seti-theme
+       ;; $ cp -rp ~/src/emacs-packages/seti-theme/* ./seti-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "seti-theme"
                          :ref      "master"
                          :upstream "https://github.com/caisah/seti-theme.git"
                          :hashref  "9d76db0b91d4f574dd96ac80fad41da35bffa109"
-                         :date     "")
+                         :date     "Sun Nov 29 06:22:05 PM PST 2020")
 
        (zmd/package-info :name     "solarized-theme"
                          :ref      "master"
