@@ -440,11 +440,16 @@
                          :hashref  "791baae69b02ee007cde779a80abc1a6b5962cf7"
                          :date     "Sun Nov 29 06:13:39 PM PST 2020")
 
+       ;; $ mkdir -p ./nord-theme/
+       ;; $ rm -rf ./nord-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/nord-theme
+       ;; $ cp -rp ~/src/emacs-packages/nord-theme/* ./nord-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "nord-theme"
                          :ref      "v0.5.0"
                          :upstream "https://github.com/arcticicestudio/nord-emacs.git"
                          :hashref  "0f5295f99005a200191ce7b660e56cd0510cf710"
-                         :date     "")
+                         :date     "Sun Nov 29 06:18:01 PM PST 2020")
 
        (zmd/package-info :name     "seti-theme"
                          :ref      "master"
