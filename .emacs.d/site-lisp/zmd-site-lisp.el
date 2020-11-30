@@ -396,11 +396,16 @@
                          :hashref  "7751d4d3115c5e873b73b670248c49ce8910997e"
                          :date     "Sun Nov 29 05:17:35 PM PST 2020")
 
+       ;; $ mkdir -p ./gotham-theme/
+       ;; $ rm -rf ./gotham-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/gotham-theme
+       ;; $ cp -rp ~/src/emacs-packages/gotham-theme/* ./gotham-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "gotham-theme"
                          :ref      "master"
                          :upstream "https://depp.brause.cc/gotham-theme.git"
                          :hashref  "a549cd031859e24fd37a779323e1542aefe86d43"
-                         :date     "")
+                         :date     "Sun Nov 29 05:46:11 PM PST 2020")
 
        (zmd/package-info :name     "gruber-darker-theme"
                          :ref      "master"
