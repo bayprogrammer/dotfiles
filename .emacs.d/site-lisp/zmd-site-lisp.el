@@ -473,11 +473,16 @@
                          :hashref  "92dcca5537fe8e3ce8a10885ef23ead4d151d9d7"
                          :date     "Sun Nov 29 06:31:43 PM PST 2020")
 
+       ;; $ mkdir -p ./spacemacs-theme/
+       ;; $ rm -rf ./spacemacs-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/spacemacs-theme
+       ;; $ cp -rp ~/src/emacs-packages/spacemacs-theme/* ./spacemacs-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "spacemacs-theme"
                          :ref      "master"
                          :upstream "https://github.com/nashamri/spacemacs-theme.git"
                          :hashref  "1f5b03254de6bfa9645711f2b79781f5cca8d203"
-                         :date     "")
+                         :date     "Sun Nov 29 06:37:36 PM PST 2020")
 
        (zmd/package-info :name     "zenburn-theme"
                          :ref      "v2.7.0"
