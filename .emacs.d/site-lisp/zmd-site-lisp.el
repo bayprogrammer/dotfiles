@@ -462,11 +462,16 @@
                          :hashref  "9d76db0b91d4f574dd96ac80fad41da35bffa109"
                          :date     "Sun Nov 29 06:22:05 PM PST 2020")
 
+       ;; $ mkdir -p ./solarized-theme/
+       ;; $ rm -rf ./solarized-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/solarized-theme
+       ;; $ cp -rp ~/src/emacs-packages/solarized-theme/{*,.*~*.git} ./solarized-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "solarized-theme"
                          :ref      "master"
                          :upstream "https://github.com/bbatsov/solarized-emacs.git"
                          :hashref  "92dcca5537fe8e3ce8a10885ef23ead4d151d9d7"
-                         :date     "")
+                         :date     "Sun Nov 29 06:31:43 PM PST 2020")
 
        (zmd/package-info :name     "spacemacs-theme"
                          :ref      "master"
