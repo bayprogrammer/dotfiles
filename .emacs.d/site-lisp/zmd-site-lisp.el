@@ -418,11 +418,16 @@
                          :hashref  "d9b82b58ded9014985be6658f4ab17e26ed9e93e"
                          :date     "Sun Nov 29 05:57:45 PM PST 2020")
 
+       ;; $ mkdir -p ./gruber-darker-theme/
+       ;; $ rm -rf ./gruber-darker-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/gruber-darker-theme
+       ;; $ cp -rp ~/src/emacs-packages/gruber-darker-theme/* ./gruber-darker-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "gruber-darker-theme"
                          :ref      "master"
                          :upstream "https://github.com/rexim/gruber-darker-theme.git"
                          :hashref  "7f95ce96079eb22b9214435ed25c5af98f60b482"
-                         :date     "")
+                         :date     "Sun Nov 29 06:05:48 PM PST 2020")
 
        (zmd/package-info :name     "monokai-theme"
                          :ref      "master"
