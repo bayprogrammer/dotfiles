@@ -429,11 +429,16 @@
                          :hashref  "7f95ce96079eb22b9214435ed25c5af98f60b482"
                          :date     "Sun Nov 29 06:05:48 PM PST 2020")
 
+       ;; $ mkdir -p ./monokai-theme/
+       ;; $ rm -rf ./monokai-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/monokai-theme
+       ;; $ cp -rp ~/src/emacs-packages/monokai-theme/* ./monokai-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "monokai-theme"
                          :ref      "master"
                          :upstream "https://github.com/oneKelvinSmith/monokai-emacs.git"
                          :hashref  "791baae69b02ee007cde779a80abc1a6b5962cf7"
-                         :date     "")
+                         :date     "Sun Nov 29 06:13:39 PM PST 2020")
 
        (zmd/package-info :name     "nord-theme"
                          :ref      "v0.5.0"
