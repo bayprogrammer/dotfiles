@@ -385,11 +385,16 @@
                          :hashref  "1114a8d84b60eaf8cadb628a29e0eaf6b5906f69"
                          :date     "Sun Nov 29 05:06:29 PM PST 2020")
 
+       ;; $ mkdir -p ./dracula-theme/
+       ;; $ rm -rf ./dracula-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/dracula-theme
+       ;; $ cp -rp ~/src/emacs-packages/dracula-theme/{*,.*~*.git} ./dracula-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "dracula-theme"
                          :ref      "v1.7.0"
                          :upstream "https://github.com/dracula/emacs.git"
                          :hashref  "7751d4d3115c5e873b73b670248c49ce8910997e"
-                         :date     "")
+                         :date     "Sun Nov 29 05:17:35 PM PST 2020")
 
        (zmd/package-info :name     "gotham-theme"
                          :ref      "master"
