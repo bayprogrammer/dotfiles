@@ -407,6 +407,17 @@
                          :hashref  "a549cd031859e24fd37a779323e1542aefe86d43"
                          :date     "Sun Nov 29 05:46:11 PM PST 2020")
 
+       ;; $ mkdir -p ./darcula-theme/
+       ;; $ rm -rf ./darcula-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/darcula-theme
+       ;; $ cp -rp ~/src/emacs-packages/darcula-theme/* ./darcula-theme/
+       ;; $ pushd ../../ ; rake install ; popd
+       (zmd/package-info :name     "darcula-theme"
+                         :ref      "master"
+                         :upstream "https://gitlab.com/fommil/emacs-darcula-theme.git"
+                         :hashref  "d9b82b58ded9014985be6658f4ab17e26ed9e93e"
+                         :date     "Sun Nov 29 05:57:45 PM PST 2020")
+
        (zmd/package-info :name     "gruber-darker-theme"
                          :ref      "master"
                          :upstream "https://github.com/rexim/gruber-darker-theme.git"
