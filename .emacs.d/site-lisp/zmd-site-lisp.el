@@ -484,8 +484,13 @@
                          :hashref  "1f5b03254de6bfa9645711f2b79781f5cca8d203"
                          :date     "Sun Nov 29 06:37:36 PM PST 2020")
 
+       ;; $ mkdir -p ./zenburn-theme/
+       ;; $ rm -rf ./zenburn-theme/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/zenburn-theme
+       ;; $ cp -rp ~/src/emacs-packages/zenburn-theme/{*,.*~*.git} ./zenburn-theme/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "zenburn-theme"
                          :ref      "v2.7.0"
                          :upstream "https://github.com/bbatsov/zenburn-emacs.git"
                          :hashref  "3e00f0e2e6202dd61216e2cb967c1da6a62e9a8d"
-                         :date     "")))
+                         :date     "Sun Nov 29 06:45:02 PM PST 2020")))
