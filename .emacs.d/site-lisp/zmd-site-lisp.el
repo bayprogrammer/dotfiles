@@ -352,11 +352,16 @@
                          :hashref  "2c8e46b584be71fe1a585c9072da86382710dc59"
                          :date     "Sun Nov 29 03:20:27 PM PST 2020")
 
+       ;; $ mkdir -p ./cider/
+       ;; $ rm -rf ./cider/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/cider
+       ;; $ cp -rp ~/src/emacs-packages/cider/{*,.*~*.git} ./cider/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "cider"
                          :ref      "master"
                          :upstream "https://github.com/clojure-emacs/cider.git"
                          :hashref  "ef47c1de151c212b8d2ddeb9af6c8b0dfc0e300f"
-                         :date     "")
+                         :date     "Sun Nov 29 04:29:09 PM PST 2020")
 
        (zmd/package-info :name     "doom-themes"
                          :ref      "v2.1.6"
