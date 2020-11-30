@@ -363,11 +363,16 @@
                          :hashref  "ef47c1de151c212b8d2ddeb9af6c8b0dfc0e300f"
                          :date     "Sun Nov 29 04:29:09 PM PST 2020")
 
+       ;; $ mkdir -p ./doom-themes/
+       ;; $ rm -rf ./doom-themes/*
+       ;; $ rm -rf ~/.emacs.d/site-lisp/doom-themes
+       ;; $ cp -rp ~/src/emacs-packages/doom-themes/{*,.*~*.git} ./doom-themes/
+       ;; $ pushd ../../ ; rake install ; popd
        (zmd/package-info :name     "doom-themes"
                          :ref      "v2.1.6"
                          :upstream "https://github.com/hlissner/emacs-doom-themes.git"
                          :hashref  "39e6971e81181b86a57f65cd0ea31376203a9756"
-                         :date     "")
+                         :date     "Sun Nov 29 04:48:09 PM PST 2020")
 
        (zmd/package-info :name     "dracula-theme"
                          :ref      "v1.7.0"
