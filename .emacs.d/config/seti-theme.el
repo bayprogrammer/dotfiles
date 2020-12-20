@@ -1,1 +1,0 @@
-(use-package seti-theme)

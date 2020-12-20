@@ -21,22 +21,14 @@ namespace :install do
       FileUtils.mkdir_p File.expand_path("~/#{dir}")
     end
 
-    # TODO(zmd): s/site-lisp/vendor/ ?
     Utils::Dotfiles.install src: $basedir, files: %w(
       .asdfrc
       .bin
       .config
       .dircolors-mono
-      .emacs.d/config
-      .emacs.d/config.el
-      .emacs.d/init.el
-      .emacs.d/lisp
-      .emacs.d/site-lisp
-      .emacs.d/zmd-prelude.el
       .gdbinit
       .gitconfig
       .gitignore_global
-      .sbclrc
       .tmux.conf
       .zprofile
       .zsh
@@ -64,22 +56,12 @@ namespace :bootstrap do
           upgrade '-y'
 
           install '-y', %w(
-            cl-asdf
-            elixir
-            emacs
-            erlang
-            gauche
-            info
-            java-11-openjdk
-            java-11-openjdk-src
             nodejs
             nodejs-docs
             npm
-            openjfx
             rlwrap
             ruby
             rubygem-rake
-            sbcl
             tmux
             util-linux-user
             xsel
