@@ -66,6 +66,8 @@ namespace :bootstrap do
             util-linux-user
             xsel
             zsh
+            tmux
+            neovim
           )
 
           groupinstall '-y', 'c-development'
