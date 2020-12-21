@@ -56,18 +56,19 @@ namespace :bootstrap do
           upgrade '-y'
 
           install '-y', %w(
+            neovim
             nodejs
             nodejs-docs
             npm
             rlwrap
             ruby
             rubygem-rake
+            tig
+            tmux
             tmux
             util-linux-user
             xsel
             zsh
-            tmux
-            neovim
           )
 
           groupinstall '-y', 'c-development'
