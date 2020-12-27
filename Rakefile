@@ -69,6 +69,8 @@ namespace :bootstrap do
             util-linux-user
             xsel
             zsh
+            kitty
+            kitty-doc
           )
 
           groupinstall '-y', 'c-development'
