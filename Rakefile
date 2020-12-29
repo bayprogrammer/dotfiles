@@ -62,6 +62,19 @@ namespace :bootstrap do
     gdbm-devel
     ncurses-devel
   )
+  asdf_python_deps = %w(
+    make
+    gcc
+    zlib-devel
+    bzip2
+    bzip2-devel
+    readline-devel
+    sqlite
+    sqlite-devel
+    openssl-devel
+    tk-devel
+    libffi-devel
+  )
 
   task :fedora do
     script do
@@ -89,6 +102,7 @@ namespace :bootstrap do
 
           install '-y', asdf_node_js_deps
           install '-y', asdf_ruby_deps
+          install '-y', asdf_python_deps
 
           groupinstall '-y', 'c-development'
         end
@@ -103,6 +117,8 @@ namespace :bootstrap do
       bash '-c', '~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
 
       asdf.('plugin-add', :ruby, 'https://github.com/asdf-vm/asdf-ruby.git')
+
+      asdf.('plugin-add', :python, 'https://github.com/danhper/asdf-python.git')
 
       unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
         chsh '-s', '/usr/bin/zsh'
