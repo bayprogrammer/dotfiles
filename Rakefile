@@ -120,6 +120,8 @@ namespace :bootstrap do
 
       asdf.('plugin-add', :python, 'https://github.com/danhper/asdf-python.git')
 
+      asdf.('plugin-add', :lua, 'https://github.com/Stratus3D/asdf-lua.git')
+
       unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
         chsh '-s', '/usr/bin/zsh'
       end
