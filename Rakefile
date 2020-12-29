@@ -110,7 +110,7 @@ namespace :bootstrap do
 
       git :clone, 'https://github.com/asdf-vm/asdf.git', '~/.asdf', '--branch', 'v0.8.0'
       asdf = ->(*args, **kwargs, &block) {
-        sh('~/.asdf/bin/asdf', *args, **kwargs)
+        sh('~/.asdf/bin/asdf', *args, **kwargs, &block)
       }
 
       asdf.('plugin-add', :nodejs, 'https://github.com/asdf-vm/asdf-nodejs.git')
@@ -121,6 +121,9 @@ namespace :bootstrap do
       asdf.('plugin-add', :python, 'https://github.com/danhper/asdf-python.git')
 
       asdf.('plugin-add', :lua, 'https://github.com/Stratus3D/asdf-lua.git')
+
+      bash File.join($basedir, 'other', 'sdkman-install.sh')
+      bash File.join($basedir, 'other', 'install-sdkman-packages.sh')
 
       unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
         chsh '-s', '/usr/bin/zsh'

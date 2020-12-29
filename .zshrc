@@ -274,6 +274,11 @@ if [ -e $HOME/.asdf ]; then
 fi
 fpath=($HOME/.asdf/completions $fpath)
 
+# -- sdkman -------------------------------------------------------------------
+
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+
 # -- clipboard integration ----------------------------------------------------
 # adapted from: http://unix.stackexchange.com/questions/51933/zsh-copy-and-paste-like-emacs/51938#51938
 
