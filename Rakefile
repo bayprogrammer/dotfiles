@@ -50,6 +50,18 @@ end
 task :bootstrap => 'bootstrap:fedora'
 namespace :bootstrap do
   asdf_node_js_deps = %w(curl dirmngr gpg)
+  asdf_ruby_deps = %w(
+    gcc
+    make
+    bzip2
+    openssl-devel
+    libyaml-devel
+    libffi-devel
+    readline-devel
+    zlib-devel
+    gdbm-devel
+    ncurses-devel
+  )
 
   task :fedora do
     script do
@@ -76,6 +88,7 @@ namespace :bootstrap do
           )
 
           install '-y', asdf_node_js_deps
+          install '-y', asdf_ruby_deps
 
           groupinstall '-y', 'c-development'
         end
@@ -88,6 +101,8 @@ namespace :bootstrap do
 
       asdf.('plugin-add', :nodejs, 'https://github.com/asdf-vm/asdf-nodejs.git')
       bash '-c', '~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
+
+      asdf.('plugin-add', :ruby, 'https://github.com/asdf-vm/asdf-ruby.git')
 
       unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
         chsh '-s', '/usr/bin/zsh'
