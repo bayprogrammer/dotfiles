@@ -49,6 +49,8 @@ end
 
 task :bootstrap => 'bootstrap:fedora'
 namespace :bootstrap do
+  asdf_node_js_deps = %w(curl dirmngr gpg)
+
   task :fedora do
     script do
       sudo do
@@ -56,6 +58,8 @@ namespace :bootstrap do
           upgrade '-y'
 
           install '-y', %w(
+            kitty
+            kitty-doc
             neovim
             nodejs
             nodejs-docs
@@ -69,13 +73,21 @@ namespace :bootstrap do
             util-linux-user
             xsel
             zsh
-            kitty
-            kitty-doc
           )
+
+          install '-y', asdf_node_js_deps
 
           groupinstall '-y', 'c-development'
         end
       end
+
+      git :clone, 'https://github.com/asdf-vm/asdf.git', '~/.asdf', '--branch', 'v0.8.0'
+      asdf = ->(*args, **kwargs, &block) {
+        sh('~/.asdf/bin/asdf', *args, **kwargs)
+      }
+
+      asdf.('plugin-add', :nodejs, 'https://github.com/asdf-vm/asdf-nodejs.git')
+      bash '-c', '~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
 
       unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
         chsh '-s', '/usr/bin/zsh'
