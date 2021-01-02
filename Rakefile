@@ -29,6 +29,7 @@ namespace :install do
       .gdbinit
       .gitconfig
       .gitignore_global
+      .manpath
       .tmux.conf
       .zprofile
       .zsh
@@ -50,6 +51,7 @@ end
 task :bootstrap => 'bootstrap:fedora'
 namespace :bootstrap do
   asdf_node_js_deps = %w(curl dirmngr gpg)
+
   asdf_ruby_deps = %w(
     gcc
     make
@@ -62,6 +64,7 @@ namespace :bootstrap do
     gdbm-devel
     ncurses-devel
   )
+
   asdf_python_deps = %w(
     make
     gcc
@@ -83,6 +86,7 @@ namespace :bootstrap do
           upgrade '-y'
 
           install '-y', %w(
+            fira-code-fonts
             kitty
             kitty-doc
             neovim
@@ -124,6 +128,14 @@ namespace :bootstrap do
 
       bash File.join($basedir, 'other', 'sdkman-install.sh')
       bash File.join($basedir, 'other', 'install-sdkman-packages.sh')
+
+      unless File.exists?(File.expand_path('~/.local/bin/clj'))
+        bash(
+          File.join($basedir, 'other', 'clojure_linux-install-1.10.1.763.sh'),
+          '--prefix',
+          '~/.local'
+        )
+      end
 
       unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
         chsh '-s', '/usr/bin/zsh'
