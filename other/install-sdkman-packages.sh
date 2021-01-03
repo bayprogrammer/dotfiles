@@ -6,3 +6,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 sdk install java 11.0.9.open-adpt
 
 sdk install kotlin 1.4.21
+
+sdk install groovy 3.0.7
