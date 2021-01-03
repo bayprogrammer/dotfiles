@@ -81,6 +81,9 @@ namespace :bootstrap do
 
   task :fedora do
     script do
+      local_bin = File.expand_path('~/.local/bin')
+      FileUtils.mkdir_p(local_bin)
+
       sudo do
         dnf do
           upgrade '-y'
@@ -129,7 +132,7 @@ namespace :bootstrap do
       bash File.join($basedir, 'other', 'sdkman-install.sh')
       bash File.join($basedir, 'other', 'install-sdkman-packages.sh')
 
-      unless File.exists?(File.expand_path('~/.local/bin/clj'))
+      unless File.exists?(File.join(local_bin, 'clj'))
         bash(
           File.join($basedir, 'other', 'clojure_linux-install-1.10.1.763.sh'),
           '--prefix',
@@ -137,7 +140,14 @@ namespace :bootstrap do
         )
       end
 
-      coursier_destination = File.expand_path('~/.local/bin/cs')
+      lein_destination = File.join(local_bin, 'lein')
+      unless File.exists?(lein_destination)
+        curl '-fLo', lein_destination, 'https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein'
+        chmod 'u+x', lein_destination
+        bash lein_destination
+      end
+
+      coursier_destination = File.join(local_bin, 'cs')
       unless File.exists?(coursier_destination)
         curl '-fLo', coursier_destination, 'https://git.io/coursier-cli-linux'
         chmod 'u+x', coursier_destination
