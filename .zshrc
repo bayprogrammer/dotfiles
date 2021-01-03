@@ -279,6 +279,12 @@ fpath=($HOME/.asdf/completions $fpath)
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 
+# -- coursier path setup ------------------------------------------------------
+
+if [ -e "${HOME}/.local/share/coursier/bin" ]; then
+  export PATH="${HOME}/.local/share/coursier/bin:$PATH"
+fi
+
 # -- clipboard integration ----------------------------------------------------
 # adapted from: http://unix.stackexchange.com/questions/51933/zsh-copy-and-paste-like-emacs/51938#51938
 

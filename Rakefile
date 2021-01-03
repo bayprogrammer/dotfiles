@@ -137,6 +137,13 @@ namespace :bootstrap do
         )
       end
 
+      coursier_destination = File.expand_path('~/.local/bin/cs')
+      unless File.exists?(coursier_destination)
+        curl '-fLo', coursier_destination, 'https://git.io/coursier-cli-linux'
+        chmod 'u+x', coursier_destination
+        bash(File.join($basedir, 'other', 'coursier-setup.sh'))
+      end
+
       unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
         chsh '-s', '/usr/bin/zsh'
       end
