@@ -90,8 +90,7 @@ namespace :bootstrap do
 
           install '-y', %w(
             fira-code-fonts
-            kitty
-            kitty-doc
+            fzf
             neovim
             nodejs
             nodejs-docs
