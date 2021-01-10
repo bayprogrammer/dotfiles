@@ -114,6 +114,9 @@ namespace :bootstrap do
         end
       end
 
+      flatpak 'remote-add', '--if-not-exists flathub', 'https://flathub.org/repo/flathub.flatpakrepo'
+      flatpak :install, '-y', :flathub, 'org.signal.Signal'
+
       git :clone, 'https://github.com/asdf-vm/asdf.git', '~/.asdf', '--branch', 'v0.8.0'
       asdf = ->(*args, **kwargs, &block) {
         sh('~/.asdf/bin/asdf', *args, **kwargs, &block)
