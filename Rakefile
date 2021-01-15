@@ -112,6 +112,10 @@ namespace :bootstrap do
 
           groupinstall '-y', 'c-development'
         end
+
+        rpm '-v', '--import', 'https://download.sublimetext.com/sublimehq-rpm-pub.gpg'
+        dnf 'config-manager', '--add-repo', 'https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo'
+        dnf :install, '-y', %w(sublime-text sublime-merge)
       end
 
       flatpak 'remote-add', '--if-not-exists flathub', 'https://flathub.org/repo/flathub.flatpakrepo'
