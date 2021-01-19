@@ -91,8 +91,10 @@ namespace :bootstrap do
       zsh
     )
 
+    # dnf group list --ids
     base_groups = %w(
       c-development
+      development-tools
     )
 
     asdf_node_js_deps = %w(curl dirmngr gpg)
@@ -124,6 +126,23 @@ namespace :bootstrap do
       libffi-devel
     )
 
+    adsf_erlang_deps = %w(
+      autoconf
+      ncurses-devel
+      wxGTK3-devel wxBase3
+      openssl-devel
+      java-1.8.0-openjdk-devel
+      libiodbc
+      unixODBC-devel.x86_64
+      erlang-odbc.x86_64
+      libxslt
+      fop
+    )
+
+    asdf_elixir_deps = %w(
+      unzip
+    )
+
     desc 'bootstrap base fedora'
     task :base do
       script do
@@ -150,9 +169,13 @@ namespace :bootstrap do
     task 'asdf' do
       script do
         sudo do
-          install '-y', asdf_node_js_deps
-          install '-y', asdf_ruby_deps
-          install '-y', asdf_python_deps
+          dnf do
+            install '-y', asdf_node_js_deps
+            install '-y', asdf_ruby_deps
+            install '-y', asdf_python_deps
+            install '-y', asdf_erlang_deps
+            install '-y', asdf_elixir_deps
+          end
         end
 
         git :clone, 'https://github.com/asdf-vm/asdf.git', '~/.asdf', '--branch', 'v0.8.0'
@@ -162,7 +185,8 @@ namespace :bootstrap do
 
         asdf.('plugin-add', :ruby, 'https://github.com/asdf-vm/asdf-ruby.git')
 
-        # TODO(zmd): asdf-vm support for erlang/otp and elixir
+        asdf.('plugin-add', :erlang, 'https://github.com/asdf-vm/asdf-erlang.git')
+        asdf.('plugin-add', :elixir, 'https://github.com/asdf-vm/asdf-elixir.git')
 
         asdf.('plugin-add', :nodejs, 'https://github.com/asdf-vm/asdf-nodejs.git')
         bash '-c', '~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
