@@ -53,8 +53,6 @@ desc 'bootstrap default system'
 task :bootstrap => 'bootstrap:fedora'
 
 namespace :bootstrap do
-  # TODO(zmd): if installing haskell stack directly, create task and add here
-  #   to accomplish that
   desc 'bootstrap base fedora'
   task :fedora => %w(
     fedora:base
@@ -67,12 +65,12 @@ namespace :bootstrap do
     #   elixir (w/erlang)
     #   lua
     #   c/c++ (compilers, tools)
-    #   haskell
     #   python
     #   nodejs
     base_packages = %w(
       fira-code-fonts
       fzf
+      haskell-platform
       neovim
       nodejs
       nodejs-docs
