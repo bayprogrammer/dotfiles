@@ -68,8 +68,12 @@ namespace :bootstrap do
     #   python
     #   nodejs
     base_packages = %w(
+      chicken
+      chicken-libs
       fira-code-fonts
       fzf
+      gauche
+      guile22
       haskell-platform
       neovim
       nodejs
@@ -78,6 +82,7 @@ namespace :bootstrap do
       rlwrap
       ruby
       rubygem-rake
+      slib
       tig
       tmux
       tmux
