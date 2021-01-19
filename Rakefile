@@ -222,10 +222,25 @@ namespace :bootstrap do
     end
 
     desc 'remove optional jvm things from fedora'
-    task 'fedora:jvm:uninstall' do
-      # TODO(zmd): implement me!
-      script do
-      end
+    task 'jvm:uninstall' do
+      rm_rf = ->(file_path) { FileUtils.rm_rf(File.expand_path(file_path)) }
+
+      %w(
+        ~/.android
+        ~/.cache/coursier
+        ~/.groovy
+        ~/.java
+        ~/.lein
+        ~/.sdkman
+        ~/.local/bin/clj
+        ~/.local/bin/clojure
+        ~/.local/bin/cs
+        ~/.local/bin/lein
+        ~/.local/lib/clojure
+        ~/.local/share/coursier
+        ~/.local/share/man/man1/clj.1
+        ~/.local/share/man/man1/clojure.1
+      ).each(&rm_rf)
     end
   end
 end
