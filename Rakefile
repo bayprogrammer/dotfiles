@@ -183,9 +183,17 @@ namespace :bootstrap do
 
     desc 'uninstall sublime things from fedora'
     task 'sublime:uninstall' do
-      # TODO(zmd): uninstall sublime things!
       script do
+        sudo do
+          dnf :remove, '-y', %w(sublime-text sublime-merge)
+          rm '-rf', '/etc/yum.repos.d/sublime-text.repo'
+        end
+
       end
+
+      rm_rf = ->(file_path) { FileUtils.rm_rf(File.expand_path(file_path)) }
+      rm_rf.('~/.config/sublime-merge')
+      rm_rf.('~/.config/sublime-text-3')
     end
 
     desc 'install optional jvm things for fedora'
