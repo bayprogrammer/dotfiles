@@ -232,6 +232,7 @@ namespace :bootstrap do
         ~/.java
         ~/.lein
         ~/.sdkman
+        ~/.scala_history_jline3
         ~/.local/bin/clj
         ~/.local/bin/clojure
         ~/.local/bin/cs
