@@ -68,6 +68,7 @@ namespace :bootstrap do
       elixir
       erlang
       fira-code-fonts
+      fossil
       fzf
       gauche
       godot
