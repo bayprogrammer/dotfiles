@@ -45,7 +45,9 @@ namespace :install do
     Utils::Dotfiles.privatize! files: priv_files, dest: priv_basedir
     Utils::Dotfiles.install src: priv_basedir, files: priv_files
 
-    # TODO(zmd): ensure ~, ~/.ssh, ~/.gnupg, etc. are set securely
+    File.chmod(0700, File.expand_path('~'))
+    File.chmod(0700, File.expand_path('~/.ssh'))
+    File.chmod(0700, File.expand_path('~/.gnupg'))
   end
 end
 
