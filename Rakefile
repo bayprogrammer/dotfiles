@@ -62,12 +62,6 @@ namespace :bootstrap do
   )
 
   namespace :fedora do
-    # TODO(zmd): ensure system versions of:
-    #   ruby
-    #   elixir (w/erlang)
-    #   lua
-    #   c/c++ (compilers, tools)
-    #   python
     base_packages = %w(
       chicken
       chicken-libs
@@ -79,6 +73,8 @@ namespace :bootstrap do
       godot
       guile22
       haskell-platform
+      love
+      lua
       neovim
       nodejs
       nodejs-docs
