@@ -76,6 +76,7 @@ namespace :bootstrap do
       fira-code-fonts
       fzf
       gauche
+      godot
       guile22
       haskell-platform
       neovim
