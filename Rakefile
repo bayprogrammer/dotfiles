@@ -91,6 +91,7 @@ namespace :bootstrap do
       rubygem-rake
       rubygems
       slib
+      sqlite
       tig
       tmux
       tmux
