@@ -126,7 +126,7 @@ namespace :bootstrap do
       libffi-devel
     )
 
-    adsf_erlang_deps = %w(
+    asdf_erlang_deps = %w(
       autoconf
       ncurses-devel
       wxGTK3-devel wxBase3
