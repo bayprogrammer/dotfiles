@@ -82,6 +82,10 @@ namespace :bootstrap do
       nodejs
       nodejs-docs
       npm
+      python3
+      python3-docs
+      python3-pip
+      python3-virtualenv
       rlwrap
       ruby
       rubygem-rake
