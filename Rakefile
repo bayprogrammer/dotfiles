@@ -85,7 +85,11 @@ namespace :bootstrap do
       python3-virtualenv
       rlwrap
       ruby
+      ruby
+      ruby-doc
+      rubygem-bundler
       rubygem-rake
+      rubygems
       slib
       tig
       tmux
