@@ -68,10 +68,11 @@ namespace :bootstrap do
     #   lua
     #   c/c++ (compilers, tools)
     #   python
-    #   nodejs
     base_packages = %w(
       chicken
       chicken-libs
+      elixir
+      erlang
       fira-code-fonts
       fzf
       gauche
