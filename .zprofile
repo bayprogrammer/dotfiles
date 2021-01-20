@@ -13,7 +13,7 @@ PATH="$HOME/.bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # -- environment-based settings -----------------------------------------------
 
-export VISUAL="emacs"
+export VISUAL="nvim"
 export EDITOR=$VISUAL
 
 export QUOTING_STYLE=literal
