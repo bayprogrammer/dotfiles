@@ -76,6 +76,7 @@ namespace :bootstrap do
       haskell-platform
       love
       lua
+      minisign
       neovim
       nodejs
       nodejs-docs
