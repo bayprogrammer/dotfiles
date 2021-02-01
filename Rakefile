@@ -52,10 +52,45 @@ namespace :install do
 end
 
 desc 'bootstrap default system'
-task :bootstrap => 'bootstrap:fedora'
+task :bootstrap => 'bootstrap:elementary'
 
 namespace :bootstrap do
-  desc 'bootstrap base fedora'
+  desc 'bootstrap elementary'
+  task :elementary => %w(elementary:base)
+
+  namespace :elementary do
+    base_packages = %w(
+      openssh-server
+      git
+      rsync
+      ruby
+
+      neovim
+      xsel
+      zsh
+      zsh-doc
+      tmux
+    )
+
+    desc 'bootstrap base elementary'
+    task :base do
+      script do
+        sudo do
+          apt :update, '-y'
+          apt :upgrade, '-y'
+          apt :'dist-upgrade', '-y'
+
+          apt :install, '-y', base_packages
+        end
+
+        unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
+          chsh '-s', '/usr/bin/zsh'
+        end
+      end
+    end
+  end
+
+  desc 'bootstrap fedora'
   task :fedora => %w(
     fedora:base
     fedora:asdf
