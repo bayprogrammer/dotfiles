@@ -83,6 +83,12 @@ namespace :bootstrap do
           apt :install, '-y', base_packages
         end
 
+        unless File.exists?('/home/linuxbrew/.linuxbrew/bin/brew')
+          bash(File.join($basedir, 'other', 'install-homebrew.sh'))
+          puts "You ought to reboot if you just installed Homebrew."
+          exit 0
+        end
+
         unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
           chsh '-s', '/usr/bin/zsh'
         end

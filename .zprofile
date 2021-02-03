@@ -19,6 +19,12 @@ export EDITOR=$VISUAL
 export QUOTING_STYLE=literal
 export HOMEBREW_NO_ANALYTICS="homebrew analytics are unwelcome here"
 
+# -- homebrew on linux --------------------------------------------------------
+
+# desperate times call for desperate measures
+[[ -x /home/linuxbrew/.linuxbrew/bin/brew ]] && \
+  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
 # -- sandbox affordances ------------------------------------------------------
 
 if [ -e /usr/share/icons ]; then
