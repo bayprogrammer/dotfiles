@@ -79,6 +79,9 @@ namespace :bootstrap do
       neovim
       fzf
       tmux
+      youtube-dl
+      ffmpeg
+      mpv
     )
 
     desc 'bootstrap base elementary'
