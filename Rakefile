@@ -24,6 +24,7 @@ namespace :install do
       .asdfrc
       .bin
       .config
+      .local
       .dircolors-mono
       .gdbinit
       .gitconfig
@@ -64,11 +65,19 @@ namespace :bootstrap do
       git
       rsync
       ruby
+      build-essential
+      gnome-disk-utility
 
       neovim
       xsel
       zsh
       zsh-doc
+      tmux
+    )
+
+    base_brew_packages = %w(
+      neovim
+      fzf
       tmux
     )
 
@@ -89,6 +98,8 @@ namespace :bootstrap do
           puts "Don't forget to re-run the bootstrap process!"
           exit 0
         end
+
+        brew :install, base_brew_packages
 
         unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
           chsh '-s', '/usr/bin/zsh'
