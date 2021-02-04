@@ -86,6 +86,7 @@ namespace :bootstrap do
         unless File.exists?('/home/linuxbrew/.linuxbrew/bin/brew')
           bash(File.join($basedir, 'other', 'install-homebrew.sh'))
           puts "You ought to reboot if you just installed Homebrew."
+          puts "Don't forget to re-run the bootstrap process!"
           exit 0
         end
 
