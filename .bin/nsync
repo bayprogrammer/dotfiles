@@ -11,7 +11,8 @@
 # my own hierarchy
 
 # Predefined sets that can be specified
-all="ark"
+all="ark ytb"
+main="ark"
 #pi="ark"
 
 # Will be set for specific sets below
@@ -41,6 +42,9 @@ while [ $# -gt 0 ]; do
       ;;
     '-c')
       extraargs="$extraargs -c"
+      ;;
+    'main')
+      set=$main
       ;;
     'all')
       set=$all
