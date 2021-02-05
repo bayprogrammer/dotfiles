@@ -67,6 +67,7 @@ namespace :bootstrap do
       ruby
       build-essential
       gnome-disk-utility
+      gnome-terminal
 
       neovim
       xsel
