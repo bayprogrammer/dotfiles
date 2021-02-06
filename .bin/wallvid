@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+  echo "Stopping wallvid."
+  killall xwinwrap
+  exit 0
+fi
+
+# https://github.com/mmhobi7/xwinwrap
+# https://gist.github.com/Dhertz/9dd69eaad092d0c0fe96#gistcomment-1806014
+nohup >/dev/null 2>/dev/null xwinwrap -ni -o 1.0 -s -un -fs -fdt -st -sp -b -nf -g 1920x1080+0+0 -- \
+  mpv -loop -wid WID -panscan=1 $@ &
+
+echo "Run wallvid with no arguments to stop."

@@ -85,6 +85,13 @@ namespace :bootstrap do
       mpv
     )
 
+    xwinwrap_brew_packages = %w(
+      xorgproto
+      libx11
+      libxrender
+      libxext
+    )
+
     desc 'bootstrap base elementary'
     task :base do
       script do
@@ -103,7 +110,7 @@ namespace :bootstrap do
           exit 0
         end
 
-        brew :install, base_brew_packages
+        brew :install, base_brew_packages + xwinwrap_brew_packages
 
         unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
           chsh '-s', '/usr/bin/zsh'
