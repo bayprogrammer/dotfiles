@@ -57,40 +57,110 @@ task :bootstrap => 'bootstrap:elementary'
 
 namespace :bootstrap do
   desc 'bootstrap elementary'
-  task :elementary => %w(elementary:base)
+  task :elementary => %w(
+    elementary:base
+    elementary:brew
+    elementary:asdf
+  )
 
   namespace :elementary do
     base_packages = %w(
-      openssh-server
-      git
-      rsync
-      ruby
       build-essential
+      dconf-editor
+      git
       gnome-disk-utility
       gnome-terminal
-      dconf-editor
+      openssh-server
+      rsync
+      ruby
 
       neovim
+      tmux
       xsel
       zsh
       zsh-doc
-      tmux
     )
 
     base_brew_packages = %w(
-      neovim
+      ffmpeg
       fzf
+      mpv
+      neovim
       tmux
       youtube-dl
-      ffmpeg
-      mpv
     )
 
-    xwinwrap_brew_packages = %w(
-      xorgproto
-      libx11
-      libxrender
-      libxext
+    xwinwrap_packages = %w(
+      build-essential
+      libx11-dev
+      libxext-dev
+      libxrender-dev
+      x11proto-xext-dev
+      xorg-dev
+    )
+
+    asdf_node_js_deps = %w(
+      curl
+      dirmngr
+      gawk
+      gpg
+    )
+
+    asdf_ruby_deps = %w(
+      autoconf
+      bison
+      build-essential
+      libdb-dev
+      libffi-dev
+      libgdbm-dev
+      libgdbm5
+      libncurses5-dev
+      libreadline6-dev
+      libssl-dev
+      libyaml-dev
+      zlib1g-dev
+    )
+
+    asdf_python_deps = %w(
+      build-essential
+      curl
+      libbz2-dev
+      libffi-dev
+      liblzma-dev
+      libncurses5-dev
+      libreadline-dev
+      libsqlite3-dev
+      libssl-dev
+      libxml2-dev
+      libxmlsec1-dev
+      llvm
+      make
+      tk-dev
+      wget
+      xz-utils
+      zlib1g-dev
+    )
+
+    asdf_erlang_deps = %w(
+      autoconf
+      build-essential
+      fop
+      libgl1-mesa-dev
+      libglu1-mesa-dev
+      libncurses-dev
+      libncurses5-dev
+      libpng-dev
+      libssh-dev
+      libwxgtk3.0-gtk3-dev
+      libxml2-utils
+      m4
+      openjdk-11-jdk
+      unixodbc-dev
+      xsltproc
+    )
+
+    asdf_elixir_deps = %w(
+      unzip
     )
 
     desc 'bootstrap base elementary'
@@ -102,8 +172,18 @@ namespace :bootstrap do
           apt :'dist-upgrade', '-y'
 
           apt :install, '-y', base_packages
+          apt :install, '-y', xwinwrap_packages
         end
 
+        unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
+          chsh '-s', '/usr/bin/zsh'
+        end
+      end
+    end
+
+    desc 'bootstrap homebrew on elementary'
+    task :brew => :base do
+      script do
         unless File.exists?('/home/linuxbrew/.linuxbrew/bin/brew')
           bash(File.join($basedir, 'other', 'install-homebrew.sh'))
           puts "You ought to reboot if you just installed Homebrew."
@@ -111,11 +191,39 @@ namespace :bootstrap do
           exit 0
         end
 
-        brew :install, base_brew_packages + xwinwrap_brew_packages
+        brew :install, base_brew_packages
+      end
+    end
 
-        unless grep "'^zebdeos.*zsh$'", '/etc/passwd'
-          chsh '-s', '/usr/bin/zsh'
+    desc 'install asdf-vm things for elementary'
+    task :asdf => :base do
+      script do
+        sudo do
+          apt do
+            install '-y', asdf_node_js_deps
+            install '-y', asdf_ruby_deps
+            install '-y', asdf_python_deps
+            install '-y', asdf_erlang_deps
+            install '-y', asdf_elixir_deps
+          end
         end
+
+        git :clone, 'https://github.com/asdf-vm/asdf.git', '~/.asdf', '--branch', 'v0.8.0'
+        asdf = ->(*args, &block) {
+          sh('~/.asdf/bin/asdf', *args, &block)
+        }
+
+        asdf.('plugin-add', :ruby, 'https://github.com/asdf-vm/asdf-ruby.git')
+
+        asdf.('plugin-add', :erlang, 'https://github.com/asdf-vm/asdf-erlang.git')
+        asdf.('plugin-add', :elixir, 'https://github.com/asdf-vm/asdf-elixir.git')
+
+        asdf.('plugin-add', :nodejs, 'https://github.com/asdf-vm/asdf-nodejs.git')
+        bash '-c', '~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
+
+        asdf.('plugin-add', :python, 'https://github.com/danhper/asdf-python.git')
+
+        asdf.('plugin-add', :lua, 'https://github.com/Stratus3D/asdf-lua.git')
       end
     end
   end
@@ -255,8 +363,8 @@ namespace :bootstrap do
         end
 
         git :clone, 'https://github.com/asdf-vm/asdf.git', '~/.asdf', '--branch', 'v0.8.0'
-        asdf = ->(*args, **kwargs, &block) {
-          sh('~/.asdf/bin/asdf', *args, **kwargs, &block)
+        asdf = ->(*args, &block) {
+          sh('~/.asdf/bin/asdf', *args, &block)
         }
 
         asdf.('plugin-add', :ruby, 'https://github.com/asdf-vm/asdf-ruby.git')
