@@ -88,6 +88,7 @@ namespace :bootstrap do
       neovim
       tmux
       youtube-dl
+      the_silver_searcher
     )
 
     xwinwrap_packages = %w(
