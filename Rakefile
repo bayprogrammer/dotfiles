@@ -68,6 +68,7 @@ namespace :bootstrap do
       build-essential
       gnome-disk-utility
       gnome-terminal
+      dconf-editor
 
       neovim
       xsel
