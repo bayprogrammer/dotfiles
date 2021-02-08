@@ -4,7 +4,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'junegunn/fzf', { 'commit': '80b5bc1b682898e3089f6caf1120919fc0933562' }
   Plug 'junegunn/fzf.vim', { 'commit': '359a80e3a34aacbd5257713b6a88aa085337166f' }
   Plug 'scrooloose/nerdtree', { 'commit': '60ec10b477eefc81eeafafa2a8c1b00046ee48fb' }
-  "Plug 'ds26gte/neoscmindent', { 'commit': '6f02d79bb4e6d621e002f6dcf8c63ad949536b6b' }
 call plug#end()
 
 " Configure netrw
@@ -30,6 +29,8 @@ set notermguicolors
 colorscheme sixtones
 "set lazyredraw
 let g:NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
 
 " Misc. settings
 set mouse=a
