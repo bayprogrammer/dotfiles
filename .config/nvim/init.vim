@@ -44,8 +44,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set autoindent
-"filetype plugin indent off
-"filetype plugin on
+filetype plugin indent off
+filetype plugin on
 
 " Configure other visual information
 set nowrap
