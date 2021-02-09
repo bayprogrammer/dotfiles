@@ -1,9 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
-  Plug 'christoomey/vim-tmux-navigator', { 'commit': '4e1a877f51a17a961b8c2a285ee80aebf05ccf42' }
-  Plug 'elixir-lang/vim-elixir', { 'commit': 'e8d59d115c8153a7de9872b3c4419f2354c0f14b' }
-  Plug 'junegunn/fzf', { 'commit': '80b5bc1b682898e3089f6caf1120919fc0933562' }
-  Plug 'junegunn/fzf.vim', { 'commit': '359a80e3a34aacbd5257713b6a88aa085337166f' }
-  Plug 'scrooloose/nerdtree', { 'commit': '60ec10b477eefc81eeafafa2a8c1b00046ee48fb' }
+  Plug 'christoomey/vim-tmux-navigator', { 'commit': '6a1e58c3ca3bc7acca36c90521b3dfae83b2a602' }
+  Plug 'elixir-lang/vim-elixir', { 'commit': '1ad996e64dadf0d2a65c8a079d55a0ad057c08b4' }
+  Plug 'junegunn/fzf', { 'commit': '6654239c94667fefb38d76cfc47b6abf5ced8149' }
+  Plug 'junegunn/fzf.vim', { 'commit': '02a192ea0bed22a015e005b281e55e0da2a8e496' }
+  Plug 'preservim/nerdtree', { 'commit': '1b19089917cc3e0a81d3294fead2424c419d545c' }
 call plug#end()
 
 " Configure netrw
@@ -19,6 +19,8 @@ autocmd! FileType fzf
 autocmd FileType fzf tnoremap <buffer> <esc> <c-c>
 autocmd FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=1 showmode ruler
+let g:fzf_preview_window = []
+"let g:fzf_layout = {'down': '40%'}
 
 " Set up colorscheme & visuals
 set background=dark
