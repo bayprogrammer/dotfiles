@@ -7,6 +7,14 @@ require 'utils/dotfiles'
 require 'utils/script'
 
 
+def other_path(file)
+  File.join($basedir, 'other', file)
+end
+
+def unless_exists(pathname, &block)
+  block.(pathname) unless File.exists?(pathname)
+end
+
 desc 'install dotfiles'
 task install: %w(
   install:dotfiles:pub
@@ -59,6 +67,7 @@ namespace :bootstrap do
   desc 'bootstrap elementary'
   task :elementary => %w(
     elementary:base
+    elementary:brave
     elementary:brew
     elementary:asdf
   )
@@ -98,6 +107,12 @@ namespace :bootstrap do
       libxrender-dev
       x11proto-xext-dev
       xorg-dev
+    )
+
+    brave_packages = %w(
+      apt-transport-https
+      curl
+      gnupg
     )
 
     asdf_node_js_deps = %w(
@@ -182,10 +197,34 @@ namespace :bootstrap do
       end
     end
 
+    # https://brave.com/linux/#linux
+    desc 'bootstrap brave on elementary'
+    task :brave => :base do
+      brave_asc_src = other_path('brave-core.asc')
+      brave_repo_src = other_path('brave-browser-release.list')
+
+      script do
+        sudo do
+          apt :install, '-y', brave_packages
+
+          unless_exists('/etc/apt/trusted.gpg.d/brave-browser-release.gpg') do |brave_asc_dest|
+            sh 'apt-key', '--keyring', brave_asc_dest, 'add', brave_asc_src
+          end
+
+          unless_exists('/etc/apt/sources.list.d/brave-browser-release.list') do |brave_repo_dest|
+            cp brave_repo_src, brave_repo_dest
+          end
+
+          apt :update, '-y'
+          apt :install, '-y', 'brave-browser'
+        end
+      end
+    end
+
     desc 'bootstrap homebrew on elementary'
     task :brew => :base do
       script do
-        unless File.exists?('/home/linuxbrew/.linuxbrew/bin/brew')
+        unless_exists('/home/linuxbrew/.linuxbrew/bin/brew') do |_pathname|
           bash(File.join($basedir, 'other', 'install-homebrew.sh'))
           puts "You ought to reboot if you just installed Homebrew."
           puts "Don't forget to re-run the bootstrap process!"
@@ -414,10 +453,10 @@ namespace :bootstrap do
       FileUtils.mkdir_p(local_bin)
 
       script do
-        bash File.join($basedir, 'other', 'sdkman-install.sh')
-        bash File.join($basedir, 'other', 'install-sdkman-packages.sh')
+        bash other_path('sdkman-install.sh')
+        bash other_path('install-sdkman-packages.sh')
 
-        unless File.exists?(File.join(local_bin, 'clj'))
+        unless_exists(File.join(local_bin, 'clj')) do |_pathname|
           bash(
             File.join($basedir, 'other', 'clojure_linux-install-1.10.1.763.sh'),
             '--prefix',
@@ -425,15 +464,13 @@ namespace :bootstrap do
           )
         end
 
-        lein_destination = File.join(local_bin, 'lein')
-        unless File.exists?(lein_destination)
+        unless_exists(File.join(local_bin, 'lein')) do |lein_destination|
           curl '-fLo', lein_destination, 'https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein'
           chmod 'u+x', lein_destination
           bash lein_destination
         end
 
-        coursier_destination = File.join(local_bin, 'cs')
-        unless File.exists?(coursier_destination)
+        unless_exists(File.join(local_bin, 'cs')) do |coursier_destination|
           curl '-fLo', coursier_destination, 'https://git.io/coursier-cli-linux'
           chmod 'u+x', coursier_destination
           bash(File.join($basedir, 'other', 'coursier-setup.sh'))
