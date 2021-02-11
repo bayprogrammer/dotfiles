@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'junegunn/fzf', { 'commit': '6654239c94667fefb38d76cfc47b6abf5ced8149' }
   Plug 'junegunn/fzf.vim', { 'commit': '02a192ea0bed22a015e005b281e55e0da2a8e496' }
   Plug 'preservim/nerdtree', { 'commit': '1b19089917cc3e0a81d3294fead2424c419d545c' }
+  Plug 'tomlion/vim-solidity', { 'commit': '569bbbedc3898236d5912fed0caf114936112ae4' }
 call plug#end()
 
 " Configure netrw
