@@ -231,6 +231,8 @@ namespace :bootstrap do
           exit 0
         end
 
+        brew :update
+        brew :upgrade
         brew :install, base_brew_packages
       end
     end
