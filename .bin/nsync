@@ -11,8 +11,8 @@
 # my own hierarchy
 
 # Predefined sets that can be specified
-all="ark ytb"
-main="ark"
+all="ark pln ytb"
+main="ark pln"
 #pi="ark"
 
 # Will be set for specific sets below
