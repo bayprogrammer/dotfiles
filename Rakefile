@@ -99,6 +99,7 @@ namespace :bootstrap do
       tmux
       youtube-dl
       the_silver_searcher
+      rlwrap
     )
 
     xwinwrap_packages = %w(
