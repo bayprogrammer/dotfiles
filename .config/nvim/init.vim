@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'preservim/nerdtree', { 'commit': '1b19089917cc3e0a81d3294fead2424c419d545c' }
   Plug 'tomlion/vim-solidity', { 'commit': '569bbbedc3898236d5912fed0caf114936112ae4' }
   Plug 'leafo/moonscript-vim', { 'commit': '715c96c7c3b02adc507f84bf5754985460afc426' }
+  Plug 'bakpakin/fennel.vim', { 'commit': '30b9beabad2c4f09b9b284caf5cd5666b6b4dc89' }
 call plug#end()
 
 " Configure netrw
