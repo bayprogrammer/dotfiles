@@ -252,6 +252,9 @@ namespace :bootstrap do
 
           apt :update, '-y'
           apt :install, '-y', 'openresty'
+
+          systemctl :disable, :openresty
+          systemctl :stop, :openresty
         end
       end
     end
