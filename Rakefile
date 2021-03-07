@@ -96,10 +96,11 @@ namespace :bootstrap do
       fzf
       mpv
       neovim
-      tmux
-      youtube-dl
-      the_silver_searcher
       rlwrap
+      the_silver_searcher
+      tmux
+      tup
+      youtube-dl
     )
 
     xwinwrap_packages = %w(
