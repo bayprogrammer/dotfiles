@@ -1,67 +1,22 @@
 $basedir = File.expand_path('..', __FILE__)
 $LOAD_PATH.prepend(File.join($basedir, 'lib'))
 
-require 'fileutils'
+require 'tasks'
 
-require 'utils/dotfiles'
-require 'utils/script'
-
-
-def other_path(file)
-  File.join($basedir, 'other', file)
-end
-
-def unless_exists(pathname, &block)
-  block.(pathname) unless File.exists?(pathname)
-end
 
 desc 'install dotfiles'
 task install: %w(
-  install:dotfiles:pub
-  install:dotfiles:priv
+  dotfiles:install:pub
+  dotfiles:install:priv
 )
 
-namespace :install do
-  desc 'install public dotfiles'
-  task 'dotfiles:pub' do
-    %w(ark src wrk).each do |dir|
-      FileUtils.mkdir_p File.expand_path("~/#{dir}")
-    end
-
-    Utils::Dotfiles.install src: $basedir, files: %w(
-      .asdfrc
-      .bin
-      .config
-      .local
-      .dircolors-mono
-      .gdbinit
-      .gitconfig
-      .gitignore_global
-      .manpath
-      .tmux.conf
-      .zprofile
-      .zsh
-      .zshrc
-    )
-  end
-
-  desc 'install private dotfiles'
-  task 'dotfiles:priv' do
-    priv_basedir = File.join(File.expand_path('..', $basedir), 'private')
-    next unless File.exists?(priv_basedir)
-
-    priv_files = %w(.ssh .gnupg)
-    Utils::Dotfiles.privatize! files: priv_files, dest: priv_basedir
-    Utils::Dotfiles.install src: priv_basedir, files: priv_files
-
-    File.chmod(0700, File.expand_path('~'))
-    File.chmod(0700, File.expand_path('~/.ssh'))
-    File.chmod(0700, File.expand_path('~/.gnupg'))
-  end
-end
-
 desc 'bootstrap default system'
-task :bootstrap => 'bootstrap:elementary'
+task :bootstrap => 'elementary:bootstrap'
+
+=begin
+
+require 'utils/script'
+
 
 namespace :bootstrap do
   desc 'bootstrap elementary'
@@ -564,3 +519,5 @@ namespace :bootstrap do
     end
   end
 end
+
+=end
