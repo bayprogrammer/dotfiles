@@ -14,7 +14,7 @@ namespace :elementary do
     )
 
     script do
-      unless_exists('/home/linuxbrew/.linuxbrew/bin/brew') do |_pathname|
+      Utils.unless_exists('/home/linuxbrew/.linuxbrew/bin/brew') do |_pathname|
         bash(File.join($basedir, 'other', 'install-homebrew.sh'))
         puts "You ought to reboot if you just installed Homebrew."
         puts "Don't forget to re-run the bootstrap process!"

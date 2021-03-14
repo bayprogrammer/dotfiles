@@ -8,8 +8,8 @@ namespace :elementary do
       gnupg
     )
 
-    brave_asc_src = other_path('brave-core.asc')
-    brave_repo_src = other_path('brave-browser-release.list')
+    brave_asc_src = Utils.other_path('brave-core.asc')
+    brave_repo_src = Utils.other_path('brave-browser-release.list')
 
     script do
       sudo do

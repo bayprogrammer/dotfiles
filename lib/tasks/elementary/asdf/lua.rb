@@ -2,7 +2,6 @@ namespace :elementary do
   namespace :asdf do
     task :lua do
       script do
-        # TODO(zmd)
         asdf = ->(*args, &block) {
           sh('~/.asdf/bin/asdf', *args, &block)
         }

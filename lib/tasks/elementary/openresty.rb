@@ -8,8 +8,8 @@ namespace :elementary do
       ca-certificates
     )
 
-    openresty_asc_src = other_path('openresty.asc')
-    openresty_repo_src = other_path('openresty.list')
+    openresty_asc_src = Utils.other_path('openresty.asc')
+    openresty_repo_src = Utils.other_path('openresty.list')
 
     script do
       sudo do
@@ -18,11 +18,11 @@ namespace :elementary do
 
         apt :install, '-y', openresty_packages
 
-        unless_exists('/etc/apt/trusted.gpg.d/openresty.gpg') do |openresty_asc_dest|
+        Utils.unless_exists('/etc/apt/trusted.gpg.d/openresty.gpg') do |openresty_asc_dest|
           sh 'apt-key', '--keyring', openresty_asc_dest, 'add', openresty_asc_src
         end
 
-        unless_exists('/etc/apt/sources.list.d/openresty.list') do |openresty_repo_dest|
+        Utils.unless_exists('/etc/apt/sources.list.d/openresty.list') do |openresty_repo_dest|
           cp openresty_repo_src, openresty_repo_dest
         end
 
