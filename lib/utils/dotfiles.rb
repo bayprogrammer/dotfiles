@@ -1,6 +1,5 @@
 require 'fileutils'
 
-
 module Utils
   module Dotfiles
     def self.install(files:, src:, dest: '~')

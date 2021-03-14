@@ -1,5 +1,3 @@
-require 'utils/dotfiles'
-
 namespace :dotfiles do
   namespace :install do
     desc 'install public dotfiles'
