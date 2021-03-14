@@ -10,4 +10,4 @@ task install: %w(
 )
 
 desc 'bootstrap default system'
-task :bootstrap => 'elementary:bootstrap'
+task :bootstrap => 'ubuntu:bootstrap'
