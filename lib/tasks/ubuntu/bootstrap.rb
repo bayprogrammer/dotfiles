@@ -1,9 +1,9 @@
 namespace :ubuntu do
-  # TODO(zmd): asdf
-  desc 'bootstrap elementary'
+  desc 'bootstrap ubuntu'
   task bootstrap: %w(
     base
     brew
+    asdf
   )
 end
 
