@@ -11,7 +11,12 @@ namespace :ubuntu do
 
     script do
       Utils.unless_exists('/usr/bin/flatpak') do |_pathname|
-        sudo :apt, :install, '-y', :flatpak
+        sudo do
+          sh('add-apt-repository', '-y', 'ppa:alexlarsson/flatpak')
+          apt :update, '-y'
+          apt :install, '-y', :flatpak
+        end
+
         flatpak '--user', 'remote-add', '--if-not-exists', :flathub, 'https://flathub.org/repo/flathub.flatpakrepo'
 
         puts "You ought to reboot if you just installed Flatpak."
