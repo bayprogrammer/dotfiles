@@ -7,6 +7,34 @@ namespace :ubuntu do
       org.gnome.Epiphany
       org.signal.Signal
       com.valvesoftware.Steam
+      org.gimp.GIMP
+      org.blender.Blender
+      org.kde.krita
+      com.chez.GrafX2
+      org.mypaint.MyPaint
+      org.pencil2d.Pencil2D
+      org.inkscape.Inkscape
+      com.github.libresprite.LibreSprite
+      com.orama_interactive.Pixelorama
+      org.godotengine.Godot
+      io.github.guillaumechereau.Goxel
+      com.wings3d.WINGS
+      org.openshot.OpenShot
+      org.kde.kdenlive
+      org.shotcut.Shotcut
+      io.github.jliljebl.Flowblade
+      org.pitivi.Pitivi
+      net.sonic_pi.SonicPi
+      org.famistudio.FamiStudio
+      io.lmms.LMMS
+      edu.mit.Scratch
+      org.tuxfamily.XMoto
+      net.supertuxkart.SuperTuxKart
+      org.supertuxproject.SuperTux
+      dk.tangramgames.mrrescue
+      net.minetest.Minetest
+      org.neverball.Neverball
+      net.sourceforge.ExtremeTuxRacer
     )
 
     script do
