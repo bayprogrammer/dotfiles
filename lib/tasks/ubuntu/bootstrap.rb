@@ -5,6 +5,9 @@ namespace :ubuntu do
     brew
     asdf
     flatpak
+    php
+    virt
+    lisp
   )
 end
 
