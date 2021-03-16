@@ -1,6 +1,6 @@
 namespace :ubuntu do
   desc 'bootstrap homebrew on ubuntu'
-  task :brew => :base do
+  task brew: :base do
     base_brew_packages = %w(
       ffmpeg
       fzf

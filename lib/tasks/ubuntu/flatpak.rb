@@ -1,9 +1,10 @@
 namespace :ubuntu do
   desc 'setup flatpak & apps'
-  task :flatpak do
+  task flatpak: :base do
     flatpaks = %w(
       org.chromium.Chromium
       com.discordapp.Discord
+      com.slack.Slack
       org.gnome.Epiphany
       org.signal.Signal
       com.valvesoftware.Steam
