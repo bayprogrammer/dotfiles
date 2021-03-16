@@ -79,6 +79,11 @@ alias rt="reuptmux"
 alias emacs="TERM=xterm-24bit emacs -nw"
 alias e="TERM=xterm-24bit emacsclient -ca '' -nw"
 
+alias gosh="rlwrap gosh"
+alias guile="rlwrap guile"
+alias ecl="rlwrap ecl"
+alias sbcl="rlwrap sbcl"
+
 if [ z"$OS" = z"Linux" ]; then
   # Happy days!
   alias l="ls --color=always -F"
