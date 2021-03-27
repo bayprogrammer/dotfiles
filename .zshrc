@@ -279,6 +279,10 @@ if [ -e $HOME/.asdf ]; then
 fi
 fpath=($HOME/.asdf/completions $fpath)
 
+# -- local perl ---------------------------------------------------------------
+
+export PERL5LIB=$HOME/.local/perl
+
 # -- sdkman -------------------------------------------------------------------
 
 export SDKMAN_DIR="$HOME/.sdkman"
