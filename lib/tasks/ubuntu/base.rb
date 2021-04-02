@@ -18,6 +18,22 @@ namespace :ubuntu do
 
       ubuntu-restricted-extras
       gnome-shell-extension-prefs
+
+      perl
+      perl-doc
+      libdevel-repl-perl
+      libreply-perl
+      php
+      python3
+      python3-doc
+      ruby
+      ruby2.7-doc
+      nodejs
+      nodejs-doc
+      gauche
+      gauche-doc
+      guile-3.0
+      guile-3.0-doc
     )
 
     script do
