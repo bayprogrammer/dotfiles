@@ -19,6 +19,16 @@ export EDITOR=$VISUAL
 export QUOTING_STYLE=literal
 export HOMEBREW_NO_ANALYTICS="homebrew analytics are unwelcome here"
 
+# -- *env style version manager's exported environment vars -------------------
+
+xenv_exports phpenv
+xenv_exports nodenv
+xenv_exports plenv
+xenv_exports rakuenv
+xenv_exports rbenv
+xenv_exports pyenv
+xenv_exports luaenv
+
 # -- homebrew on linux --------------------------------------------------------
 
 # desperate times call for desperate measures

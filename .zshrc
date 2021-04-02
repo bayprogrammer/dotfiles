@@ -279,6 +279,16 @@ if [ -e $HOME/.asdf ]; then
 fi
 fpath=($HOME/.asdf/completions $fpath)
 
+# -- *env interactive features ------------------------------------------------
+
+xenv_interactive phpenv
+xenv_interactive nodenv
+xenv_interactive plenv
+xenv_interactive rakuenv
+xenv_interactive rbenv
+xenv_interactive pyenv
+xenv_interactive luaenv
+
 # -- local perl ---------------------------------------------------------------
 
 export PERL5LIB=$HOME/.local/perl

@@ -58,15 +58,6 @@ xenv_interactive() {
   fi
 }
 
-xenv_upgrade() {
-  for xenvpath in $(find $HOME -maxdepth 1 -type d -name '.*env'); do
-    cd "$xenvpath"
-    xenvcmd="$(basename "$(pwd)" | cut -d'.' -f2)"
-    git pull --all --prune
-    $xenvcmd install $($xenvcmd install -l | grep '^ *[0-9\.]\+$' | tail -1)
-  done
-}
-
 color_reset="$(printf "\033[0m")"
 color_black="$(printf "\033[30m")"
 color_bright_black="$(printf "\033[30;1m")"
