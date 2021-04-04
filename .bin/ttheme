@@ -1,7 +1,10 @@
 #!/usr/bin/env perl
 
-use Modern::Perl;
-use Experimental::Signatures;
+use strict;
+use warnings;
+use utf8;
+use feature ':5.16';
+use experimental 'signatures';
 
 # Reference:
 #   - https://chromium.googlesource.com/apps/libapps/+/main/hterm/doc/ControlSequences.md#osc
