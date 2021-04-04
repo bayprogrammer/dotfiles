@@ -19,27 +19,6 @@ lagoon
   colour_14  #34E2E2
   colour_15  #9DECCC
 
-lagoon-t
-  foreground #3FC072
-  background #050908
-  bold       #4FDD4D
-  colour_00  #256E50
-  colour_01  #CC0000
-  colour_02  #4E9A06
-  colour_03  #C4A000
-  colour_04  #3465A4
-  colour_05  #75507B
-  colour_06  #06989A
-  colour_07  #6CDAAD
-  colour_08  #2A845F
-  colour_09  #EF2929
-  colour_10  #8AE234
-  colour_11  #FCE94F
-  colour_12  #729FCF
-  colour_13  #729FCF
-  colour_14  #34E2E2
-  colour_15  #9DECCC
-
 plato
   foreground #ff9000
   background #180700
@@ -60,3 +39,24 @@ plato
   colour_13  #f365dc
   colour_14  #6adcbb
   colour_15  #ffeaaa
+
+amber
+  foreground #FCFCAFAF3E3E
+  background #050502020000
+  bold       #FCFCE9E94F4F
+  colour_00  #481D04
+  colour_01  #CC0000
+  colour_02  #4D9A05
+  colour_03  #C3A000
+  colour_04  #3464A3
+  colour_05  #754F7B
+  colour_06  #05979A
+  colour_07  #D3D6CF
+  colour_08  #5F2807
+  colour_09  #EF2828
+  colour_10  #89E234
+  colour_11  #FBE84F
+  colour_12  #729ECF
+  colour_13  #AC7EA8
+  colour_14  #34E2E2
+  colour_15  #EDEDEB
