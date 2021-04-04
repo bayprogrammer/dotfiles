@@ -1,0 +1,110 @@
+#!/usr/bin/env perl
+
+use Modern::Perl;
+use Experimental::Signatures;
+
+# Reference:
+#   - https://chromium.googlesource.com/apps/libapps/+/main/hterm/doc/ControlSequences.md#osc
+#   - https://sw.kovidgoyal.net/kitty/faq.html#how-do-i-change-the-colors-in-a-running-kitty-instance
+#   - https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h3-Operating-System-Commands
+#   - https://github.com/dexpota/kitty-themes
+#   - https://github.com/tmux/tmux/blob/master/tools/ansicode.txt
+
+my %themes = ();
+
+my %osc_codes = (
+  'foreground' => '10',
+  'background' => '11',
+  'bold'       => '5;0',
+  'colour_00'  => '4;0',
+  'colour_01'  => '4;1',
+  'colour_02'  => '4;2',
+  'colour_03'  => '4;3',
+  'colour_04'  => '4;4',
+  'colour_05'  => '4;5',
+  'colour_06'  => '4;6',
+  'colour_07'  => '4;7',
+  'colour_08'  => '4;8',
+  'colour_09'  => '4;9',
+  'colour_10'  => '4;10',
+  'colour_11'  => '4;11',
+  'colour_12'  => '4;12',
+  'colour_13'  => '4;13',
+  'colour_14'  => '4;14',
+  'colour_15'  => '4;15',
+);
+
+sub emit_osc($theme, $attribute) {
+  my $code = $osc_codes{$attribute};
+  my $color = $theme->{$attribute};
+  print("\e]$code;$color\a");
+}
+
+sub apply_theme($theme) {
+  emit_osc($theme, 'background');
+  emit_osc($theme, 'foreground');
+  emit_osc($theme, 'bold');
+  emit_osc($theme, 'colour_00');
+  emit_osc($theme, 'colour_01');
+  emit_osc($theme, 'colour_02');
+  emit_osc($theme, 'colour_03');
+  emit_osc($theme, 'colour_04');
+  emit_osc($theme, 'colour_05');
+  emit_osc($theme, 'colour_06');
+  emit_osc($theme, 'colour_07');
+  emit_osc($theme, 'colour_08');
+  emit_osc($theme, 'colour_09');
+  emit_osc($theme, 'colour_10');
+  emit_osc($theme, 'colour_11');
+  emit_osc($theme, 'colour_12');
+  emit_osc($theme, 'colour_13');
+  emit_osc($theme, 'colour_14');
+  emit_osc($theme, 'colour_15');
+}
+
+sub lookup_theme($theme_name) {
+  my $theme = $themes{$theme_name};
+  if (defined $theme) {
+    return $theme;
+  } else {
+    say("$theme_name is not an available theme.");
+    available_themes();
+    exit 1;
+  }
+}
+
+sub available_themes() {
+  say("Available themes:");
+  for (sort keys %themes) {
+    print("  ");
+    say;
+  }
+}
+
+sub parse_themes($themes_file_pathname) {
+  my $full_pathname = glob($themes_file_pathname);
+  open(my $themes_fh, '<', $full_pathname)
+    or die "Unable to open $themes_file_pathname";
+
+  my $current_theme_key = undef;
+  while (my $line = <$themes_fh>) {
+    chomp($line);
+    if ($line =~ /^[a-zA-Z]/) {
+      $current_theme_key = $line;
+      $themes{$current_theme_key} = {};
+    } else {
+      $line =~ s/^\s+|\s+$//g;
+      my ($attr_key, $attr_value) = split /\s+/, $line;
+      if (defined $attr_key && defined $attr_value) {
+        $themes{$current_theme_key}{$attr_key} = $attr_value;
+      }
+    }
+  }
+}
+
+parse_themes('~/.tthemes');
+if (my $theme_name = $ARGV[0]) {
+  apply_theme(lookup_theme($theme_name));
+} else {
+  available_themes();
+}

@@ -17,6 +17,7 @@ namespace :dotfiles do
         .gitignore_global
         .manpath
         .tmux.conf
+        .tthemes
         .zprofile
         .zsh
         .zshrc
