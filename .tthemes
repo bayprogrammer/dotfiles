@@ -51,7 +51,7 @@ amber
   colour_04  #3464A3
   colour_05  #754F7B
   colour_06  #05979A
-  colour_07  #D3D6CF
+  colour_07  #B9A77D
   colour_08  #5F2807
   colour_09  #EF2828
   colour_10  #89E234
@@ -59,4 +59,25 @@ amber
   colour_12  #729ECF
   colour_13  #AC7EA8
   colour_14  #34E2E2
-  colour_15  #EDEDEB
+  colour_15  #F7E9CA
+
+hacker-green
+  foreground #8A8AE2E23434
+  background #010105050000
+  bold       #BEBEF3F34E4E
+  colour_00  #2B4611
+  colour_01  #CC0000
+  colour_02  #1C1CE3E38B8B
+  colour_03  #C3A000
+  colour_04  #3464A3
+  colour_05  #754F7B
+  colour_06  #05979A
+  colour_07  #86A866
+  colour_08  #3F6917
+  colour_09  #EF2828
+  colour_10  #5D5DF0F0AEAE
+  colour_11  #FBE84F
+  colour_12  #729ECF
+  colour_13  #AC7EA8
+  colour_14  #34E2E2
+  colour_15  #B5DB90
