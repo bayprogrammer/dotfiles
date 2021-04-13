@@ -48,7 +48,7 @@ sub emit_osc($theme, $attribute) {
   if ($code && $color) {
     print("\e]$code;$color\a");
   } else {
-    say(STDERR "WARNING: $attribute is unknown.")
+    say($STDERR "WARNING: $attribute is unknown.")
   }
 }
 
