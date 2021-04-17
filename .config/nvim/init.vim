@@ -7,6 +7,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tomlion/vim-solidity', { 'commit': '569bbbedc3898236d5912fed0caf114936112ae4' }
   Plug 'leafo/moonscript-vim', { 'commit': '715c96c7c3b02adc507f84bf5754985460afc426' }
   Plug 'bakpakin/fennel.vim', { 'commit': '30b9beabad2c4f09b9b284caf5cd5666b6b4dc89' }
+  Plug 'yko/mojo.vim', { 'commit': '2a42b1dad90f56bfe5a6b36166a3f238fd24ba3d' }
 call plug#end()
 
 " Configure netrw
@@ -24,6 +25,9 @@ autocmd FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=1 showmode ruler
 let g:fzf_preview_window = []
 "let g:fzf_layout = {'down': '40%'}
+
+" Mojo
+let mojo_highlight_data = 1
 
 " Set up colorscheme & visuals
 set background=dark
