@@ -81,3 +81,24 @@ hacker-green
   colour_13  #AC7EA8
   colour_14  #34E2E2
   colour_15  #B5DB90
+
+spacex
+  foreground #a6ced0
+  background #030B2C
+  bold       #d0f9f9
+  colour_00  #2c4872
+  colour_01  #c5341b
+  colour_02  #6fa531
+  colour_03  #caaf38
+  colour_04  #4f79af
+  colour_05  #83678c
+  colour_06  #46a5a8
+  colour_07  #dbded8
+  colour_08  #3c629b
+  colour_09  #e15040
+  colour_10  #a9e25d
+  colour_11  #faeb77
+  colour_12  #8eaed4
+  colour_13  #b694b5
+  colour_14  #73e3e6
+  colour_15  #f0f2f0
