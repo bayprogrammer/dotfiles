@@ -35,7 +35,6 @@ namespace :ubuntu do
       guile-3.0
       guile-3.0-doc
       love
-      lua
       lua5.3
 
       ubuntu-wallpapers-karmic
