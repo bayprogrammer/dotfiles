@@ -34,6 +34,9 @@ namespace :ubuntu do
       gauche-doc
       guile-3.0
       guile-3.0-doc
+      love
+      lua
+      lua5.3
 
       ubuntu-wallpapers-karmic
       ubuntu-wallpapers-lucid

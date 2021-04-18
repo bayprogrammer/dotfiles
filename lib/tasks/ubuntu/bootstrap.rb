@@ -4,6 +4,7 @@ namespace :ubuntu do
     base
     brew
     asdf
+    xenv
     flatpak
     php
     virt
