@@ -18,7 +18,7 @@ namespace :ubuntu do
         end
 
         apt :update, '-y'
-        apt :install, '-y', 'postgresql'
+        apt :install, '-y', %w(postgresql postgresql-doc libpq-dev)
       end
 
       Dir.chdir('/') do
