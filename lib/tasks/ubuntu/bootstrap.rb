@@ -9,6 +9,7 @@ namespace :ubuntu do
     php
     virt
     lisp
+    postgresql
   )
 end
 
