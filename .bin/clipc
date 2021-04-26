@@ -1,9 +1,16 @@
 #!/bin/sh
 
-if [ -x /usr/bin/pbcopy ] && [ -x /usr/local/bin/reattach-to-user-namespace ]; then
-  cat - |/usr/local/bin/reattach-to-user-namespace /usr/bin/pbcopy
-elif which xsel >/dev/null 2>/dev/null; then
-  cat - |xsel -ib
+if [ $ENABLE_GUI_CLIPBOARD ]; then
+  if [ -x /usr/bin/pbcopy ] && [ -x /usr/local/bin/reattach-to-user-namespace ]; then
+    cat - |/usr/local/bin/reattach-to-user-namespace /usr/bin/pbcopy
+  elif which xsel >/dev/null 2>/dev/null; then
+    cat - |xsel -ib
+  else
+    umask 0077
+    mkdir -p $HOME/.clipboard/
+    printf "" >$HOME/.clipboard/clipdata
+    cat - >$HOME/.clipboard/clipdata
+  fi
 else
   umask 0077
   mkdir -p $HOME/.clipboard/
