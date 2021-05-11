@@ -15,6 +15,7 @@ namespace :ubuntu do
       xsel
       zsh
       zsh-doc
+      tup
 
       ubuntu-restricted-extras
       gnome-shell-extension-prefs
