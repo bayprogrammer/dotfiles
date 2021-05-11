@@ -1,3 +1,24 @@
+tango-dark
+  foreground #D3D7CF
+  background #2E3436
+  bold       #FFFFFF
+  colour_00  #2E3436
+  colour_01  #CC0000
+  colour_02  #4E9A06
+  colour_03  #C4A000
+  colour_04  #3465A4
+  colour_05  #75507B
+  colour_06  #06989A
+  colour_07  #D3D7CF
+  colour_08  #555753
+  colour_09  #EF2929
+  colour_10  #8AE234
+  colour_11  #FCE94F
+  colour_12  #729FCF
+  colour_13  #AD7FA8
+  colour_14  #34E2E2
+  colour_15  #EEEEEC
+
 lagoon
   foreground #3FC072
   background #080F0D
