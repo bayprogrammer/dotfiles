@@ -1,6 +1,6 @@
-namespace :elementary do
+namespace :ubuntu do
   # https://openresty.org/en/linux-packages.html#ubuntu
-  desc 'bootstrap openresty on elementary'
+  desc 'bootstrap openresty on ubuntu'
   task :openresty => :base do
     openresty_packages = %w(
       wget
@@ -9,7 +9,7 @@ namespace :elementary do
     )
 
     openresty_asc_src = Utils.other_path('openresty.asc')
-    openresty_repo_src = Utils.other_path('openresty_elementary.list')
+    openresty_repo_src = Utils.other_path('openresty_ubuntu.list')
 
     script do
       sudo do
@@ -22,7 +22,7 @@ namespace :elementary do
           sh 'apt-key', '--keyring', openresty_asc_dest, 'add', openresty_asc_src
         end
 
-        Utils.unless_exists('/etc/apt/sources.list.d/openresty_elementary.list') do |openresty_repo_dest|
+        Utils.unless_exists('/etc/apt/sources.list.d/openresty_ubuntu.list') do |openresty_repo_dest|
           cp openresty_repo_src, openresty_repo_dest
         end
 
@@ -35,3 +35,4 @@ namespace :elementary do
     end
   end
 end
+

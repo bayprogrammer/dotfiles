@@ -10,6 +10,7 @@ namespace :ubuntu do
     virt
     lisp
     postgresql
+    openresty
   )
 end
 
