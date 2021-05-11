@@ -81,6 +81,7 @@ alias e="TERM=xterm-24bit emacsclient -ca '' -nw"
 
 alias gosh="rlwrap gosh"
 alias guile="rlwrap guile"
+alias fennel="rlwrap fennel"
 alias ecl="rlwrap ecl"
 alias sbcl="rlwrap sbcl"
 
