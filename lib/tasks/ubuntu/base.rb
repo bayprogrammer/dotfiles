@@ -37,10 +37,11 @@ namespace :ubuntu do
       guile-3.0
       guile-3.0-doc
       love
-      lua5.3
       luarocks
+      lua5.1
       liblua5.1-0
       liblua5.1-0-dev
+      lua5.3
       liblua5.3-0
       liblua5.3-dev
 
