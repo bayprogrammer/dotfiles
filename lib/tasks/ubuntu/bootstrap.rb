@@ -3,6 +3,8 @@ namespace :ubuntu do
   task bootstrap: %w(
     base
     brew
+    asdf
+    xenv
     flatpak
     php
     virt
