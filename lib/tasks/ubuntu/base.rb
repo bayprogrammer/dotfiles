@@ -31,6 +31,7 @@ namespace :ubuntu do
       ruby2.7-doc
       nodejs
       nodejs-doc
+      npm
       gauche
       gauche-doc
       guile-3.0
