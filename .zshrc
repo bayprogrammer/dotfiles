@@ -305,6 +305,12 @@ if [ -e "${HOME}/.local/share/coursier/bin" ]; then
   export PATH="${HOME}/.local/share/coursier/bin:$PATH"
 fi
 
+# -- luarocks path setup ------------------------------------------------------
+
+if [ -e "${HOME}/.luarocks" ]; then
+  export PATH="${HOME}/.luarocks/bin:$PATH"
+fi
+
 # -- clipboard integration ----------------------------------------------------
 # adapted from: http://unix.stackexchange.com/questions/51933/zsh-copy-and-paste-like-emacs/51938#51938
 
