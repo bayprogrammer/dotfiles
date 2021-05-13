@@ -39,6 +39,10 @@ namespace :ubuntu do
       love
       lua5.3
       luarocks
+      liblua5.1-0
+      liblua5.1-0-dev
+      liblua5.3-0
+      liblua5.3-dev
 
       ubuntu-wallpapers-karmic
       ubuntu-wallpapers-lucid
