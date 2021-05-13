@@ -38,6 +38,7 @@ namespace :ubuntu do
       guile-3.0-doc
       love
       lua5.3
+      luarocks
 
       ubuntu-wallpapers-karmic
       ubuntu-wallpapers-lucid
