@@ -307,8 +307,8 @@ fi
 
 # -- luarocks path setup ------------------------------------------------------
 
-if [ -e "${HOME}/.luarocks" ]; then
-  export PATH="${HOME}/.luarocks/bin:$PATH"
+if which luarocks 1>/dev/null 2>&1; then
+  eval "$(luarocks path --bin)"
 fi
 
 # -- clipboard integration ----------------------------------------------------
