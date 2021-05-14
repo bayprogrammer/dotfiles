@@ -43,17 +43,35 @@ add_user_to_group() {
   fi
 }
 
-xenv_exports() {
-  if command_available $1; then
-    eval "$($1 init - | grep '^export')"
-  elif [[ -d $HOME/.$1/bin ]]; then
-    PATH="$HOME/.$1/bin:$PATH"
+xenv_is_new_pyenv() {
+  if [[ "$1" == "pyenv" ]]; then
+    pyenv help init | grep -q -- '--path'
+  else
+    return 1
+  fi
+}
+
+xenv_init_exports() {
+  if xenv_is_new_pyenv $1; then
+    eval "$($1 init --path)"
+  else
     eval "$($1 init - | grep '^export')"
   fi
 }
 
-xenv_interactive() {
+xenv_exports() {
   if command_available $1; then
+    xenv_init_exports $1
+  elif [[ -d $HOME/.$1/bin ]]; then
+    PATH="$HOME/.$1/bin:$PATH"
+    xenv_init_exports $1
+  fi
+}
+
+xenv_interactive() {
+  if command_available $1 && [[ "$1" == "pyenv" ]]; then
+    eval "$($1 init -)"
+  elif command_available $1; then
     eval "$($1 init - | grep -v '^export')"
   fi
 }
