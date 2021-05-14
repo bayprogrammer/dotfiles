@@ -307,9 +307,9 @@ fi
 
 # -- luarocks path setup ------------------------------------------------------
 
-if [ -e "${HOME}/.luarocks" ]; then
-  export PATH="${HOME}/.luarocks/bin:$PATH"
-fi
+# if [ -e "${HOME}/.luarocks" ]; then
+#   export PATH="${HOME}/.luarocks/bin:$PATH"
+# fi
 
 # -- clipboard integration ----------------------------------------------------
 # adapted from: http://unix.stackexchange.com/questions/51933/zsh-copy-and-paste-like-emacs/51938#51938
