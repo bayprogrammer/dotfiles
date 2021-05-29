@@ -1,14 +1,14 @@
 namespace :ubuntu do
   desc 'install *env things for ubuntu'
+  # xenv:rbenv
+  # xenv:nodenv
+  # xenv:luaenv
+  # xenv:pyenv
   task xenv: %w(
     base
-    xenv:rbenv
+    xenv:phpenv
     xenv:plenv
     xenv:rakuenv
-    xenv:phpenv
-    xenv:nodenv
-    xenv:luaenv
-    xenv:pyenv
   )
 end
 
