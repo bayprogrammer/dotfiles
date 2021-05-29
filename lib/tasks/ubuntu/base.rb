@@ -6,6 +6,7 @@ namespace :ubuntu do
       dconf-editor
       git
       openssh-server
+      mosh
       rsync
       ruby
 
