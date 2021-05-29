@@ -36,6 +36,7 @@ namespace :ubuntu do
       net.minetest.Minetest
       org.neverball.Neverball
       net.sourceforge.ExtremeTuxRacer
+      io.sourceforge.clonekeenplus
     )
 
     script do
