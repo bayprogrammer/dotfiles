@@ -10,6 +10,7 @@ namespace :ubuntu do
       the_silver_searcher
       tmux
       youtube-dl
+      gforth
     )
 
     script do
