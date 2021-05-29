@@ -37,6 +37,7 @@ namespace :ubuntu do
       org.neverball.Neverball
       net.sourceforge.ExtremeTuxRacer
       io.sourceforge.clonekeenplus
+      us.zoom.Zoom
     )
 
     script do
