@@ -105,7 +105,7 @@ hacker-green
 
 spacex
   foreground #a6ced0
-  background #030B2C
+  background #000c29
   bold       #d0f9f9
   colour_00  #2c4872
   colour_01  #c5341b
@@ -123,3 +123,277 @@ spacex
   colour_13  #b694b5
   colour_14  #73e3e6
   colour_15  #f0f2f0
+
+cyberpunk
+  foreground #e574d7
+  background #05001d
+  bold       #e8abf5
+  colour_00  #0b0040
+  colour_01  #ff2600
+  colour_02  #8efa00
+  colour_03  #fffb00
+  colour_04  #0096ff
+  colour_05  #ff40ff
+  colour_06  #00fdff
+  colour_07  #e5358e
+  colour_08  #120069
+  colour_09  #ff7e79
+  colour_10  #d4fb79
+  colour_11  #fffc79
+  colour_12  #76d6ff
+  colour_13  #ff85ff
+  colour_14  #73fdff
+  colour_15  #e57395
+
+fallout-hacker-green
+  foreground #28fe14
+  background #050900
+  bold       #acff80
+  colour_00  #132300
+  colour_01  #990000
+  colour_02  #00a600
+  colour_03  #999900
+  colour_04  #3fab93
+  colour_05  #b200b2
+  colour_06  #00a6b2
+  colour_07  #86d74b
+  colour_08  #264600
+  colour_09  #e50000
+  colour_10  #00d900
+  colour_11  #e5e500
+  colour_12  #50dabb
+  colour_13  #e500e5
+  colour_14  #00e5e5
+  colour_15  #b7fe97
+
+fallout-power-armour
+  foreground #fef57f
+  background #0e0c00
+  bold       #fef9c4
+  colour_00  #292500
+  colour_01  #990000
+  colour_02  #00a600
+  colour_03  #999900
+  colour_04  #00997c
+  colour_05  #b200b2
+  colour_06  #00a6b2
+  colour_07  #fee596
+  colour_08  #4f4700
+  colour_09  #e50000
+  colour_10  #00d900
+  colour_11  #e5e500
+  colour_12  #00e5d7
+  colour_13  #e500e5
+  colour_14  #00e5e5
+  colour_15  #feecc7
+
+man-page
+  foreground #2c2b1d
+  background #fef49c
+  bold       #000000
+  colour_00  #2b2a1c
+  colour_01  #643111
+  colour_02  #396219
+  colour_03  #5b5c1d
+  colour_04  #001061
+  colour_05  #611655
+  colour_06  #255a54
+  colour_07  #4e4c34
+  colour_08  #3d3b28
+  colour_09  #8c3f12
+  colour_10  #63a32e
+  colour_11  #999900
+  colour_12  #0632ab
+  colour_13  #ad2393
+  colour_14  #47b099
+  colour_15  #615e40
+
+novel
+  foreground #3b2322
+  background #dfdbc3
+  bold       #7f2a19
+  colour_00  #2c2c28
+  colour_01  #5f170c
+  colour_02  #285b19
+  colour_03  #757328
+  colour_04  #16375f
+  colour_05  #5a1d5e
+  colour_06  #295d5f
+  colour_07  #494943
+  colour_08  #3a3934
+  colour_09  #941100
+  colour_10  #008f00
+  colour_11  #9b9934
+  colour_12  #005493
+  colour_13  #942193
+  colour_14  #009193
+  colour_15  #5c5c54
+
+ocean
+  foreground #ededed
+  background #224fbc
+  bold       #ffffff
+  colour_00  #003a92
+  colour_01  #ff2600
+  colour_02  #00f900
+  colour_03  #fffb00
+  colour_04  #0096ff
+  colour_05  #ff40ff
+  colour_06  #00fdff
+  colour_07  #bfbfbf
+  colour_08  #1d92d4
+  colour_09  #ff7e79
+  colour_10  #73fa79
+  colour_11  #fffc79
+  colour_12  #76d6ff
+  colour_13  #ff85ff
+  colour_14  #73fdff
+  colour_15  #e5e5e5
+
+pro-amber
+  foreground #ff9300
+  background #0b0702
+  bold       #ffd479
+  colour_00  #000000
+  colour_01  #ff2600
+  colour_02  #8efa00
+  colour_03  #fffb00
+  colour_04  #0096ff
+  colour_05  #ff40ff
+  colour_06  #00fdff
+  colour_07  #bfbfbf
+  colour_08  #666666
+  colour_09  #ff7e79
+  colour_10  #d4fb79
+  colour_11  #fffc79
+  colour_12  #76d6ff
+  colour_13  #ff85ff
+  colour_14  #73fdff
+  colour_15  #e5e5e5
+
+sublime
+  foreground #d8dee9
+  background #343d46
+  bold       #ffffff
+  colour_00  #191919
+  colour_01  #eb5f66
+  colour_02  #99c894
+  colour_03  #f8af58
+  colour_04  #6798cc
+  colour_05  #c694c6
+  colour_06  #60b4b4
+  colour_07  #bfbfbf
+  colour_08  #666666
+  colour_09  #ff7e79
+  colour_10  #d4fb79
+  colour_11  #fffc79
+  colour_12  #76d6ff
+  colour_13  #ff85ff
+  colour_14  #73fdff
+  colour_15  #e5e5e5
+
+yellow
+  foreground #ffff00
+  background #000000
+  bold       #ffff81
+  colour_00  #464515
+  colour_01  #990000
+  colour_02  #00a600
+  colour_03  #997a35
+  colour_04  #00997c
+  colour_05  #b200b2
+  colour_06  #00a6b2
+  colour_07  #d6cd7b
+  colour_08  #67661f
+  colour_09  #e50000
+  colour_10  #00d900
+  colour_11  #e6a62f
+  colour_12  #00e5d7
+  colour_13  #e500e5
+  colour_14  #00e5e5
+  colour_15  #fffea2
+
+zoom
+  foreground #76d6ff
+  background #000000
+  bold       #73fdff
+  colour_00  #4b4b4b
+  colour_01  #ff2600
+  colour_02  #8efa00
+  colour_03  #fffb00
+  colour_04  #0096ff
+  colour_05  #ff40ff
+  colour_06  #00fdff
+  colour_07  #bfbfbf
+  colour_08  #727272
+  colour_09  #ff7e79
+  colour_10  #d4fb79
+  colour_11  #fffc79
+  colour_12  #76d6ff
+  colour_13  #ff85ff
+  colour_14  #73fdff
+  colour_15  #e5e5e5
+
+basic
+  foreground #cccccc
+  background #171717
+  bold       #ffffff
+  colour_00  #424242
+  colour_01  #990000
+  colour_02  #00a600
+  colour_03  #999900
+  colour_04  #0000b2
+  colour_05  #b200b2
+  colour_06  #00a6b2
+  colour_07  #bfbfbf
+  colour_08  #666666
+  colour_09  #e50000
+  colour_10  #00d900
+  colour_11  #e5e500
+  colour_12  #0000ff
+  colour_13  #e500e5
+  colour_14  #00e5e5
+  colour_15  #e5e5e5
+
+pro
+  foreground #f4f4f4
+  background #000000
+  bold       #ffffff
+  colour_00  #484848
+  colour_01  #ff2600
+  colour_02  #8efa00
+  colour_03  #fffb00
+  colour_04  #0096ff
+  colour_05  #ff40ff
+  colour_06  #00fdff
+  colour_07  #bfbfbf
+  colour_08  #737373
+  colour_09  #ff7e79
+  colour_10  #d4fb79
+  colour_11  #fffc79
+  colour_12  #76d6ff
+  colour_13  #ff85ff
+  colour_14  #73fdff
+  colour_15  #e5e5e5
+
+pro-gray
+  foreground #a9a9a9
+  background #000000
+  bold       #d6d6d6
+  colour_00  #2d2d2d
+  colour_01  #ff2600
+  colour_02  #8efa00
+  colour_03  #fffb00
+  colour_04  #0096ff
+  colour_05  #ff40ff
+  colour_06  #00fdff
+  colour_07  #bfbfbf
+  colour_08  #666666
+  colour_09  #ff7e79
+  colour_10  #d4fb79
+  colour_11  #fffc79
+  colour_12  #76d6ff
+  colour_13  #ff85ff
+  colour_14  #73fdff
+  colour_15  #e5e5e5
+
