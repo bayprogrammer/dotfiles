@@ -1,5 +1,5 @@
 namespace :ubuntu do
-  task lisp: [:base, :brew, :clojure] do
+  task lisp: [:base, :brew, :clojure, :lfe] do
     lisp_brew_packages = %w(
       gauche
       guile

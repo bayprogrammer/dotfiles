@@ -12,6 +12,7 @@ namespace :ubuntu do
 
       curl
       neovim
+      emacs
       tmux
       xsel
       zsh
