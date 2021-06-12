@@ -118,6 +118,18 @@
 
 ----------------------------------------
 
+
+  It took me a long time to figure
+  out that I need to be working on
+  the things that I care about the
+  most. As long as I'm doing that,
+  then I have no problem putting in
+  infinite amounts of work.
+
+  --Jonathon Blow [blow-1]
+
+----------------------------------------
+
   Charles Simonyi, the legendary
   Microsoft programmer, grew up in
   Hungary and had few books
@@ -251,6 +263,7 @@
 [weissbeck-1]     https://www.youtube.com/watch?v=MHkUtCiYiII
 [carmack-1]       https://d3dvortex.blogspot.com/2005/07/programming-advice-from-john-carmack-i.html
 [romero-1]        [summarized from John Romenro's public talks on YouTube on the history of Id]
+[blow-1]          https://www.youtube.com/watch?v=dSwgEYAJUko
 [simonyi-1]       https://wiki.wxpython.org/How%20to%20Learn%20wxPython
 [gage-1]          https://www.salon.com/2000/05/16/chapter_2_part_one/
 [hickey-1]        [TODO, quote from video on YouTube]
