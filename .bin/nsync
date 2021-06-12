@@ -12,8 +12,8 @@
 
 # Predefined sets that can be specified
 all="ark pln ytb kit"
-main="ark pln"
-#pi="ark"
+main="ark pln kit"
+basic="ark pln"
 
 # Will be set for specific sets below
 extraargs=
@@ -27,7 +27,7 @@ desthost=
 
 usage() {
   echo "USAGE: nsync [-f] [-c] <set> <hostname>"
-  echo " SETS: pi all"
+  echo " SETS: basic main all"
 }
 
 # Process arguments and flags
@@ -43,16 +43,15 @@ while [ $# -gt 0 ]; do
     '-c')
       extraargs="$extraargs -c"
       ;;
+    'basic')
+      set=$basic
+      ;;
     'main')
       set=$main
       ;;
     'all')
       set=$all
       ;;
-    #'pi')
-    #  set=$pi
-    #  extraargs="$extraargs --exclude work/0_ATTIC --exclude code/0_ATTIC --exclude archive/audio --exclude archive/video"
-    #  ;;
     *)
       desthost=$1
       ;;
