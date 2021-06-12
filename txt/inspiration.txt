@@ -1,0 +1,258 @@
+
+  The powerful forces of
+  corporations and government look
+  terrifying and unbeatable. In
+  truth, they are often brittle.
+  When Daniel prayed in defiance of
+  King Darius’ order (notice that
+  Daniel prayed with windows open
+  for all to see, Dan. 6:10), the
+  King reversed (Dan. 6:26) the
+  irrevocable law (Dan. 6:12) after
+  seeing Daniels’s faithfulness to
+  Yahweh. Daniel’s resistance
+  exposed the impotence of the
+  King’s wicked requirements. While
+  it’s not always the case that the
+  merest resistance will reverse
+  unrighteous decrees, the
+  resistance of Daniel is a biblical
+  example that gives us hope that
+  enemies will crumble when we are
+  faithful.
+
+  --Jason Cherry [cherry-1]
+
+----------------------------------------
+
+  If they want to oppress you that
+  badly, you just have to out-think
+  them... if you think enough,
+  eventually you'll win.
+
+  --Nathan Tardiff [tardiff-1]
+
+----------------------------------------
+
+  Just keep trying, and don't give
+  up, and then you'll see a finished
+  project.
+
+  --Joe Weissbeck [weissbeck-1]
+
+========================================
+
+  Make/build/do something audacious
+  without asking permission.
+
+  --Nathaniel Talbott [talbott-1]
+
+----------------------------------------
+
+  Trace profit back to its source,
+  and you’ll find someone hard at
+  work, building something useful,
+  using their time to take something
+  of value N and make it worth N+1.
+  And in most cases a tool is
+  required to add that value, so if
+  you do not own and cannot make the
+  tool, you cannot ply your trade
+  without relying on someone who
+  does or can.
+
+  --Nathaniel Talbott [talbott-2]
+
+----------------------------------------
+
+  You’ll spend almost half your
+  waking hours laboring over the
+  course of your life – why do it
+  using inferior tools, working on
+  projects you’re not passionate
+  about? More importantly, why spend
+  it building profit for someone
+  else?
+
+  --Nathaniel Talbott [talbott-2]
+
+----------------------------------------
+
+  Lots of people that want to
+  program will talk a lot about
+  programming, but not actually
+  write that many programs. You
+  should write hundreds of programs
+
+  If you want to get good at
+  something you need to focus on it,
+  which means choosing to exclude
+  some other things from your life.
+
+  --John Carmack [carmack-1]
+
+----------------------------------------
+
+  John Romero in his 20s, while
+  working for Softdisk, wrote a
+  small game or utility every month
+  for about a year. That is a goal
+  to aspire to. John Carmack says
+  you should be writing hundreds of
+  programs.
+
+  To get started making games Romero
+  suggests just starting
+  immediately. You don't need
+  anyone's permissions, the tools
+  and techniques are well documented
+  and freely available, and you
+  don't have to (and indeed
+  shouldn't) start big; start with
+  something small (like Pong),
+  learn, make lots of small games,
+  then eventually you will be able
+  to make something you can sell.
+
+  [romero-1]
+
+----------------------------------------
+
+  Charles Simonyi, the legendary
+  Microsoft programmer, grew up in
+  Hungary and had few books
+  available to him from which to
+  learn computer science. He was
+  able to get the source code for a
+  compiler and studied the printouts
+  as musicians would study musical
+  scores.
+
+  --wxpython.org [simonyi-1]
+
+----------------------------------------
+
+  BBN had a big contract to
+  implement TCP/IP, but their stuff
+  didn't work, and Joy's gradstudent
+  stuff worked. So they had this big
+  meeting and this grad student in a
+  T-shirt shows up, and they said,
+  "How did you do this?" And Bill
+  said, "It's very simple -- you
+  read the protocol and write the
+  code."
+
+  --John Gage [gage-1]
+
+----------------------------------------
+
+  Simplicity is hard work. But,
+  there's a huge payoff. The person
+  who has a genuinely simpler system
+  – a system made out of genuinely
+  simple parts, is going to be able
+  to [effect] the greatest change
+  with the least work. He's going to
+  kick your ass.  He's gonna spend
+  more time simplifying things up
+  front and in the long haul he's
+  gonna wipe the plate with you
+  because he'll have that ability to
+  change things when you're
+  struggling to push elephants
+  around.
+
+  --Rich Hickey [hickey-1]
+
+----------------------------------------
+
+  What you do is you hook [building
+  a new Common Lisp implementation
+  from scratch] to another really
+  important idea and then you work
+  until 3:00am every night for
+  months and then years writing
+  code. You take all those voices in
+  your head that say you should not
+  be doing this and squeeze them
+  hard until they... go to sleep and
+  stop bothering you.
+
+  --Christian Schafmeister
+    [schafmeister-1]
+
+========================================
+
+  Don't expect [learning to program]
+  to be easy, you will have to work
+  at it. Get a few more books from
+  the library that cover beginning
+  programming to go with the ones
+  you have -- sometimes a different
+  author explaining the same thing
+  will help a concept click. Go
+  through all of them at least
+  twice. Try to do every problem and
+  exercise, don't just read them and
+  think you get it. Lots of people
+  that want to program will talk a
+  lot about programming, but not
+  actually write that many programs.
+  You should write hundreds of
+  programs
+
+  If you want to get good at
+  something you need to focus on it,
+  which means choosing to exclude
+  some other things from your life.
+  Keep a little journal of what you
+  are working on each day, you may
+  find that you aren't applying
+  yourself all that hard. Learn
+  something new every single day.
+
+  Avoid "cookbook programming",
+  where you copy and paste bits of
+  code that you have found to make
+  something work. Make sure you
+  fully understand what everything
+  it actually doing, and that you
+  are comfortable applying the
+  techniques in other situations.
+
+  ...you should try and "find the
+  excitement" in even the most
+  simple data processing tasks.
+  There are layers and layers of
+  things going on in just compiling
+  and running the simplest program
+  that are worth investigating.
+
+  Pay attention in school to the
+  math classes. It is more important
+  to be able to do basic algebra and
+  trigonometry extremely well than
+  to sort of get by in higher math
+  classes. You should be able to ace
+  all the tests and teach other
+  people if you truly have a
+  complete understanding of the
+  subjects.
+
+  --John Carmack [carmack-1]
+
+========================================
+
+[cherry-1]        https://theopolisinstitute.com/what-to-do-when-your-boss-encourages-you-to-support-the-moral-revolution/
+[tardiff-1]       https://www.youtube.com/watch?v=zCwCe8xDsS8
+[talbott-1]       https://twitter.com/ntalbott/status/1391087518364233733
+[talbott-2]       http://blog.talbott.ws/articles/2009/07/15/how-capitalism-saves-ruby-from-corporatism/
+[weissbeck-1]     https://www.youtube.com/watch?v=MHkUtCiYiII
+[carmack-1]       https://d3dvortex.blogspot.com/2005/07/programming-advice-from-john-carmack-i.html
+[romero-1]        [summarized from John Romenro's public talks on YouTube on the history of Id]
+[simonyi-1]       https://wiki.wxpython.org/How%20to%20Learn%20wxPython
+[gage-1]          https://www.salon.com/2000/05/16/chapter_2_part_one/
+[hickey-1]        [TODO, quote from video on YouTube]
+[schafmeister-1]  https://news.ycombinator.com/item?id=17042230
+
