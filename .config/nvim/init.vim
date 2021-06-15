@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'bakpakin/fennel.vim', { 'commit': '30b9beabad2c4f09b9b284caf5cd5666b6b4dc89' }
   Plug 'yko/mojo.vim', { 'commit': '2a42b1dad90f56bfe5a6b36166a3f238fd24ba3d' }
   Plug 'lfe-support/vim-lfe', { 'commit': '290e7085fbd53d0c2b98b5d5a442d697c08b7d76' }
+  Plug 'Olical/conjure', { 'tag': 'v4.21.0' }
 call plug#end()
 
 " Configure netrw
@@ -41,6 +42,8 @@ colorscheme sixtones
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
+
+let g:conjure#mapping#prefix = ";"
 
 " Misc. settings
 set mouse=a
@@ -90,7 +93,7 @@ let g:clipboard = {
       \   },
       \   'cache_enabled': 1,
       \ }
-nnoremap ; :
+" nnoremap ; :
 set clipboard+=unnamedplus
 
 " Custom keybinding settings
