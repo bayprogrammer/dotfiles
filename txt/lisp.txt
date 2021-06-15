@@ -1,0 +1,35 @@
+* Baggers does Lisp -> GPU Programming:
+
+  - https://www.youtube.com/playlist?list=PL2VAYZE_4wRITJBv6saaKouj4sWSG1FcS
+
+
+* Robert Smith does Lisp -> Quantum Programming:
+
+  - https://www.youtube.com/playlist?list=PLjHa38CO26-OjCFrzQxsxwrpanmwjMaLT
+
+
+* Christian Schafmeister does Lisp -> Synthetic protein construction:
+
+  - https://www.youtube.com/watch?v=8X69_42Mj-g
+  - https://www.youtube.com/watch?v=0rSMt1pAlbE
+  - https://www.youtube.com/watch?v=mbdXeRBbgDM
+
+
+* Steve Losh uses Common Lisp now, used Clojure previously:
+
+  - https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/
+
+
+* PicoLisp has built-in distributed database support:
+
+  - https://picolisp.com/wiki/?picolispdb
+
+
+* Uncle Bob says Lisp is The Last Programming Language
+
+  - https://m.youtube.com/watch?v=P2yr-3F6PQo
+
+
+* Jeff Terrell does neat things with Clojure
+
+  - https://cs.unc.edu/people/jeff-terrell/
