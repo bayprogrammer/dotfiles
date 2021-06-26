@@ -35,6 +35,24 @@
 
 ----------------------------------------
 
+  If you take away an artist's oil
+  paints, you haven't prevented him
+  from telling the truth, you've
+  only prevented him from telling
+  the truth using oil paints. He'll
+  go over and use water colors to
+  tell the truth. If only liars are
+  allowed to use oil paints, then
+  the branding of oil paints will
+  become the brand of liars; after a
+  while only sell-outs and liars
+  will be known for using oil
+  paints.
+
+  --Doug TenNapel [tennapel-2]
+
+----------------------------------------
+
   If they want to oppress you that
   badly, you just have to out-think
   them... if you think enough,
@@ -266,17 +284,18 @@
 
 ========================================
 
-[cherry-1]        https://theopolisinstitute.com/what-to-do-when-your-boss-encourages-you-to-support-the-moral-revolution/
-[tennapel-1]      https://twitter.com/DougTenNapel/status/1407865016196419587
-[tardiff-1]       https://www.youtube.com/watch?v=zCwCe8xDsS8
-[talbott-1]       https://twitter.com/ntalbott/status/1391087518364233733
-[talbott-2]       http://blog.talbott.ws/articles/2009/07/15/how-capitalism-saves-ruby-from-corporatism/
-[weissbeck-1]     https://www.youtube.com/watch?v=MHkUtCiYiII
-[carmack-1]       https://d3dvortex.blogspot.com/2005/07/programming-advice-from-john-carmack-i.html
-[romero-1]        [summarized from John Romenro's public talks on YouTube on the history of Id]
-[blow-1]          https://www.youtube.com/watch?v=dSwgEYAJUko
-[simonyi-1]       https://wiki.wxpython.org/How%20to%20Learn%20wxPython
-[gage-1]          https://www.salon.com/2000/05/16/chapter_2_part_one/
-[hickey-1]        [TODO, quote from video on YouTube]
-[schafmeister-1]  https://news.ycombinator.com/item?id=17042230
+[cherry-1]                       https://theopolisinstitute.com/what-to-do-when-your-boss-encourages-you-to-support-the-moral-revolution/
+[tennapel-1]                     https://twitter.com/DougTenNapel/status/1407865016196419587
+[tennapel-2]      23-Jun-2021    https://www.youtube.com/watch?v=fxHI0vGlURw
+[tardiff-1]                      https://www.youtube.com/watch?v=zCwCe8xDsS8
+[talbott-1]                      https://twitter.com/ntalbott/status/1391087518364233733
+[talbott-2]                      http://blog.talbott.ws/articles/2009/07/15/how-capitalism-saves-ruby-from-corporatism/
+[weissbeck-1]                    https://www.youtube.com/watch?v=MHkUtCiYiII
+[carmack-1]                      https://d3dvortex.blogspot.com/2005/07/programming-advice-from-john-carmack-i.html
+[romero-1]                       [summarized from John Romenro's public talks on YouTube on the history of Id]
+[blow-1]                         https://www.youtube.com/watch?v=dSwgEYAJUko
+[simonyi-1]                      https://wiki.wxpython.org/How%20to%20Learn%20wxPython
+[gage-1]                         https://www.salon.com/2000/05/16/chapter_2_part_one/
+[hickey-1]                       [TODO, quote from video on YouTube]
+[schafmeister-1]                 https://news.ycombinator.com/item?id=17042230
 
